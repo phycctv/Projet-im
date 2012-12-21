@@ -1,6 +1,7 @@
 //
 //  AppDelegate.h
 //  Projet-im ok cool
+// pas du tout
 //
 //  Created by Xiaowei ZHANG on 12-12-21.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
