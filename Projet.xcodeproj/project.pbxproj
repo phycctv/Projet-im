@@ -43,27 +43,27 @@
 		CDCE2C571684AB0F00FFAEE5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CDCE2C591684AB0F00FFAEE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CDCE2C5B1684AB0F00FFAEE5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CDCE2C5F1684AB0F00FFAEE5 /* Projet-Info.plist */ = {isa = PBXFileReference; path = "Projet-Info.plist"; sourceTree = "<group>"; };
+		CDCE2C5F1684AB0F00FFAEE5 /* Projet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Projet-Info.plist"; sourceTree = "<group>"; };
 		CDCE2C611684AB0F00FFAEE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CDCE2C631684AB0F00FFAEE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CDCE2C651684AB0F00FFAEE5 /* Projet-Prefix.pch */ = {isa = PBXFileReference; path = "Projet-Prefix.pch"; sourceTree = "<group>"; };
-		CDCE2C661684AB0F00FFAEE5 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		CDCE2C651684AB0F00FFAEE5 /* Projet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Projet-Prefix.pch"; sourceTree = "<group>"; };
+		CDCE2C661684AB0F00FFAEE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CDCE2C671684AB0F00FFAEE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CDCE2C6A1684AB0F00FFAEE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		CDCE2C6D1684AB0F00FFAEE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		CDCE2C6F1684AB0F00FFAEE5 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		CDCE2C6F1684AB0F00FFAEE5 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		CDCE2C701684AB0F00FFAEE5 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		CDCE2C721684AB0F00FFAEE5 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		CDCE2C741684AB0F00FFAEE5 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		CDCE2C761684AB0F00FFAEE5 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		CDCE2C761684AB0F00FFAEE5 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		CDCE2C771684AB0F00FFAEE5 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		CDCE2C791684AB0F00FFAEE5 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		CDCE2C7B1684AB0F00FFAEE5 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		CDCE2C821684AB0F00FFAEE5 /* ProjetTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjetTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCE2C831684AB0F00FFAEE5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		CDCE2C8B1684AB0F00FFAEE5 /* ProjetTests-Info.plist */ = {isa = PBXFileReference; path = "ProjetTests-Info.plist"; sourceTree = "<group>"; };
+		CDCE2C8B1684AB0F00FFAEE5 /* ProjetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProjetTests-Info.plist"; sourceTree = "<group>"; };
 		CDCE2C8D1684AB0F00FFAEE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CDCE2C8F1684AB0F00FFAEE5 /* ProjetTests.h */ = {isa = PBXFileReference; path = ProjetTests.h; sourceTree = "<group>"; };
+		CDCE2C8F1684AB0F00FFAEE5 /* ProjetTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjetTests.h; sourceTree = "<group>"; };
 		CDCE2C901684AB0F00FFAEE5 /* ProjetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjetTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
