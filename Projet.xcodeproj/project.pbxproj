@@ -465,6 +465,7 @@
 				CDCE2C961684AB0F00FFAEE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDCE2C971684AB0F00FFAEE5 /* Build configuration list for PBXNativeTarget "ProjetTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +474,7 @@
 				CDCE2C991684AB0F00FFAEE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

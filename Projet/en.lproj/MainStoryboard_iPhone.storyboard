@@ -156,6 +156,7 @@
         <scene sceneID="15">
             <objects>
                 <tabBarController id="4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Jzg-DV-hLP"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="5">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
@@ -182,12 +183,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="dtM-ZW-tIj" kind="relationship" relationship="rootViewController" id="RaO-pZ-zjY"/>
+                        <segue destination="dtM-ZW-tIj" kind="relationship" relationship="rootViewController" id="6iR-Si-H4f"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZZ-8H-gwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="144" y="192"/>
+            <point key="canvasLocation" x="221" y="192"/>
         </scene>
     </scenes>
     <resources>
