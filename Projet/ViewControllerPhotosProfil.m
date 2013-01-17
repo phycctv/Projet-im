@@ -6,13 +6,13 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "ViewControllerPhoto.h"
+#import "ViewControllerPhotosProfil.h"
 
-@interface ViewControllerPhoto ()
+@interface ViewControllerPhotosProfil ()
 
 @end
 
-@implementation ViewControllerPhoto
+@implementation ViewControllerPhotosProfil
 
 - (void)viewDidLoad
 {

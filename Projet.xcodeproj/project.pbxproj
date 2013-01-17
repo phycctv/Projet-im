@@ -10,7 +10,14 @@
 		75190BCC168CA65B00364E2B /* ViewControllerInscription.m in Sources */ = {isa = PBXBuildFile; fileRef = 75190BCB168CA65B00364E2B /* ViewControllerInscription.m */; };
 		75ADBF5916A875F800939381 /* StoryboardSegueCustomLeftToRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ADBF5816A875F800939381 /* StoryboardSegueCustomLeftToRight.m */; };
 		75ADBF5B16A87A8C00939381 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75ADBF5A16A87A8C00939381 /* QuartzCore.framework */; };
-		75ADBF5D16A87AB700939381 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75ADBF5C16A87AB700939381 /* QuartzCore.framework */; };
+		75ADBF6016A8802800939381 /* ViewControllerInformations.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ADBF5F16A8802800939381 /* ViewControllerInformations.m */; };
+		75ADBF6316A8807300939381 /* ViewControllerPhotoInscription.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ADBF6216A8807300939381 /* ViewControllerPhotoInscription.m */; };
+		75ADBF6616A8821A00939381 /* ViewControllerActualites.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ADBF6516A8821A00939381 /* ViewControllerActualites.m */; };
+		75ADBF6916A8823C00939381 /* ViewControllerApresPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ADBF6816A8823C00939381 /* ViewControllerApresPhoto.m */; };
+		75ADBF6C16A8836F00939381 /* ViewControllerNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ADBF6B16A8836E00939381 /* ViewControllerNotifications.m */; };
+		75ADBF6F16A883C500939381 /* ViewControllerContactsProfil.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ADBF6E16A883C400939381 /* ViewControllerContactsProfil.m */; };
+		75ADBF7216A883DE00939381 /* ViewControllerInfosProfil.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ADBF7116A883DD00939381 /* ViewControllerInfosProfil.m */; };
+		75ADBF7516A883FF00939381 /* ViewControllerCarteProfil.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ADBF7416A883FE00939381 /* ViewControllerCarteProfil.m */; };
 		CD93CD07168C883E0038D8F7 /* VueConnexion.m in Sources */ = {isa = PBXBuildFile; fileRef = CD93CD06168C883E0038D8F7 /* VueConnexion.m */; };
 		CD93CD18168C9A160038D8F7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CD93CD17168C9A160038D8F7 /* Default.png */; };
 		CDCE2C581684AB0F00FFAEE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCE2C571684AB0F00FFAEE5 /* UIKit.framework */; };
@@ -21,7 +28,7 @@
 		CDCE2C681684AB0F00FFAEE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCE2C671684AB0F00FFAEE5 /* AppDelegate.m */; };
 		CDCE2C6B1684AB0F00FFAEE5 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCE2C691684AB0F00FFAEE5 /* MainStoryboard_iPhone.storyboard */; };
 		CDCE2C6E1684AB0F00FFAEE5 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCE2C6C1684AB0F00FFAEE5 /* MainStoryboard_iPad.storyboard */; };
-		CDCE2C711684AB0F00FFAEE5 /* ViewControllerPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCE2C701684AB0F00FFAEE5 /* ViewControllerPhoto.m */; };
+		CDCE2C711684AB0F00FFAEE5 /* ViewControllerPhotosProfil.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCE2C701684AB0F00FFAEE5 /* ViewControllerPhotosProfil.m */; };
 		CDCE2C731684AB0F00FFAEE5 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCE2C721684AB0F00FFAEE5 /* first.png */; };
 		CDCE2C751684AB0F00FFAEE5 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCE2C741684AB0F00FFAEE5 /* first@2x.png */; };
 		CDCE2C781684AB0F00FFAEE5 /* ViewControllerRecherche.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCE2C771684AB0F00FFAEE5 /* ViewControllerRecherche.m */; };
@@ -50,7 +57,22 @@
 		75ADBF5716A875F800939381 /* StoryboardSegueCustomLeftToRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardSegueCustomLeftToRight.h; sourceTree = "<group>"; };
 		75ADBF5816A875F800939381 /* StoryboardSegueCustomLeftToRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardSegueCustomLeftToRight.m; sourceTree = "<group>"; };
 		75ADBF5A16A87A8C00939381 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		75ADBF5C16A87AB700939381 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		75ADBF5E16A8802800939381 /* ViewControllerInformations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerInformations.h; sourceTree = "<group>"; };
+		75ADBF5F16A8802800939381 /* ViewControllerInformations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerInformations.m; sourceTree = "<group>"; };
+		75ADBF6116A8807300939381 /* ViewControllerPhotoInscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerPhotoInscription.h; sourceTree = "<group>"; };
+		75ADBF6216A8807300939381 /* ViewControllerPhotoInscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerPhotoInscription.m; sourceTree = "<group>"; };
+		75ADBF6416A8821900939381 /* ViewControllerActualites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerActualites.h; sourceTree = "<group>"; };
+		75ADBF6516A8821A00939381 /* ViewControllerActualites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerActualites.m; sourceTree = "<group>"; };
+		75ADBF6716A8823B00939381 /* ViewControllerApresPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerApresPhoto.h; sourceTree = "<group>"; };
+		75ADBF6816A8823C00939381 /* ViewControllerApresPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerApresPhoto.m; sourceTree = "<group>"; };
+		75ADBF6A16A8836E00939381 /* ViewControllerNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerNotifications.h; sourceTree = "<group>"; };
+		75ADBF6B16A8836E00939381 /* ViewControllerNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerNotifications.m; sourceTree = "<group>"; };
+		75ADBF6D16A883C400939381 /* ViewControllerContactsProfil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerContactsProfil.h; sourceTree = "<group>"; };
+		75ADBF6E16A883C400939381 /* ViewControllerContactsProfil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerContactsProfil.m; sourceTree = "<group>"; };
+		75ADBF7016A883DD00939381 /* ViewControllerInfosProfil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerInfosProfil.h; sourceTree = "<group>"; };
+		75ADBF7116A883DD00939381 /* ViewControllerInfosProfil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerInfosProfil.m; sourceTree = "<group>"; };
+		75ADBF7316A883FE00939381 /* ViewControllerCarteProfil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerCarteProfil.h; sourceTree = "<group>"; };
+		75ADBF7416A883FE00939381 /* ViewControllerCarteProfil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerCarteProfil.m; sourceTree = "<group>"; };
 		CD93CD05168C883E0038D8F7 /* VueConnexion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VueConnexion.h; path = ../VueConnexion.h; sourceTree = "<group>"; };
 		CD93CD06168C883E0038D8F7 /* VueConnexion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VueConnexion.m; path = ../VueConnexion.m; sourceTree = "<group>"; };
 		CD93CD17168C9A160038D8F7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -66,8 +88,8 @@
 		CDCE2C671684AB0F00FFAEE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CDCE2C6A1684AB0F00FFAEE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		CDCE2C6D1684AB0F00FFAEE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		CDCE2C6F1684AB0F00FFAEE5 /* ViewControllerPhoto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerPhoto.h; sourceTree = "<group>"; };
-		CDCE2C701684AB0F00FFAEE5 /* ViewControllerPhoto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerPhoto.m; sourceTree = "<group>"; };
+		CDCE2C6F1684AB0F00FFAEE5 /* ViewControllerPhotosProfil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerPhotosProfil.h; sourceTree = "<group>"; };
+		CDCE2C701684AB0F00FFAEE5 /* ViewControllerPhotosProfil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerPhotosProfil.m; sourceTree = "<group>"; };
 		CDCE2C721684AB0F00FFAEE5 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		CDCE2C741684AB0F00FFAEE5 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		CDCE2C761684AB0F00FFAEE5 /* ViewControllerRecherche.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerRecherche.h; sourceTree = "<group>"; };
@@ -91,7 +113,6 @@
 				CDCE2C581684AB0F00FFAEE5 /* UIKit.framework in Frameworks */,
 				CDCE2C5A1684AB0F00FFAEE5 /* Foundation.framework in Frameworks */,
 				CDCE2C5C1684AB0F00FFAEE5 /* CoreGraphics.framework in Frameworks */,
-				75ADBF5D16A87AB700939381 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +140,6 @@
 		CDCE2C481684AB0F00FFAEE5 = {
 			isa = PBXGroup;
 			children = (
-				75ADBF5A16A87A8C00939381 /* QuartzCore.framework */,
 				CDCE2C5D1684AB0F00FFAEE5 /* Projet */,
 				CDCE2C891684AB0F00FFAEE5 /* ProjetTests */,
 				CDCE2C561684AB0F00FFAEE5 /* Frameworks */,
@@ -139,7 +159,7 @@
 		CDCE2C561684AB0F00FFAEE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				75ADBF5C16A87AB700939381 /* QuartzCore.framework */,
+				75ADBF5A16A87A8C00939381 /* QuartzCore.framework */,
 				CDCE2C571684AB0F00FFAEE5 /* UIKit.framework */,
 				CDCE2C591684AB0F00FFAEE5 /* Foundation.framework */,
 				CDCE2C5B1684AB0F00FFAEE5 /* CoreGraphics.framework */,
@@ -161,8 +181,24 @@
 				CD93CD06168C883E0038D8F7 /* VueConnexion.m */,
 				75190BCA168CA65B00364E2B /* ViewControllerInscription.h */,
 				75190BCB168CA65B00364E2B /* ViewControllerInscription.m */,
-				CDCE2C6F1684AB0F00FFAEE5 /* ViewControllerPhoto.h */,
-				CDCE2C701684AB0F00FFAEE5 /* ViewControllerPhoto.m */,
+				75ADBF5E16A8802800939381 /* ViewControllerInformations.h */,
+				75ADBF5F16A8802800939381 /* ViewControllerInformations.m */,
+				75ADBF6116A8807300939381 /* ViewControllerPhotoInscription.h */,
+				75ADBF6216A8807300939381 /* ViewControllerPhotoInscription.m */,
+				75ADBF6416A8821900939381 /* ViewControllerActualites.h */,
+				75ADBF6516A8821A00939381 /* ViewControllerActualites.m */,
+				75ADBF6716A8823B00939381 /* ViewControllerApresPhoto.h */,
+				75ADBF6816A8823C00939381 /* ViewControllerApresPhoto.m */,
+				CDCE2C6F1684AB0F00FFAEE5 /* ViewControllerPhotosProfil.h */,
+				CDCE2C701684AB0F00FFAEE5 /* ViewControllerPhotosProfil.m */,
+				75ADBF6D16A883C400939381 /* ViewControllerContactsProfil.h */,
+				75ADBF6E16A883C400939381 /* ViewControllerContactsProfil.m */,
+				75ADBF7016A883DD00939381 /* ViewControllerInfosProfil.h */,
+				75ADBF7116A883DD00939381 /* ViewControllerInfosProfil.m */,
+				75ADBF7316A883FE00939381 /* ViewControllerCarteProfil.h */,
+				75ADBF7416A883FE00939381 /* ViewControllerCarteProfil.m */,
+				75ADBF6A16A8836E00939381 /* ViewControllerNotifications.h */,
+				75ADBF6B16A8836E00939381 /* ViewControllerNotifications.m */,
 				CDCE2C761684AB0F00FFAEE5 /* ViewControllerRecherche.h */,
 				CDCE2C771684AB0F00FFAEE5 /* ViewControllerRecherche.m */,
 				CDCE2C721684AB0F00FFAEE5 /* first.png */,
@@ -319,10 +355,18 @@
 			files = (
 				CDCE2C641684AB0F00FFAEE5 /* main.m in Sources */,
 				CDCE2C681684AB0F00FFAEE5 /* AppDelegate.m in Sources */,
-				CDCE2C711684AB0F00FFAEE5 /* ViewControllerPhoto.m in Sources */,
+				CDCE2C711684AB0F00FFAEE5 /* ViewControllerPhotosProfil.m in Sources */,
 				CDCE2C781684AB0F00FFAEE5 /* ViewControllerRecherche.m in Sources */,
 				CD93CD07168C883E0038D8F7 /* VueConnexion.m in Sources */,
 				75ADBF5916A875F800939381 /* StoryboardSegueCustomLeftToRight.m in Sources */,
+				75ADBF6016A8802800939381 /* ViewControllerInformations.m in Sources */,
+				75ADBF6316A8807300939381 /* ViewControllerPhotoInscription.m in Sources */,
+				75ADBF6616A8821A00939381 /* ViewControllerActualites.m in Sources */,
+				75ADBF6916A8823C00939381 /* ViewControllerApresPhoto.m in Sources */,
+				75ADBF6C16A8836F00939381 /* ViewControllerNotifications.m in Sources */,
+				75ADBF6F16A883C500939381 /* ViewControllerContactsProfil.m in Sources */,
+				75ADBF7216A883DE00939381 /* ViewControllerInfosProfil.m in Sources */,
+				75ADBF7516A883FF00939381 /* ViewControllerCarteProfil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
