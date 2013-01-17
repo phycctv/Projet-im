@@ -6,13 +6,13 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "ViewControllerRecherche.h"
 
-@interface SecondViewController ()
+@interface ViewControllerRecherche ()
 
 @end
 
-@implementation SecondViewController
+@implementation ViewControllerRecherche
 
 - (void)viewDidLoad
 {

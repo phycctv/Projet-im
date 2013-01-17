@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		75190BCC168CA65B00364E2B /* ViewControllerInscription.m in Sources */ = {isa = PBXBuildFile; fileRef = 75190BCB168CA65B00364E2B /* ViewControllerInscription.m */; };
+		75ADBF5916A875F800939381 /* StoryboardSegueCustomLeftToRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ADBF5816A875F800939381 /* StoryboardSegueCustomLeftToRight.m */; };
+		75ADBF5B16A87A8C00939381 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75ADBF5A16A87A8C00939381 /* QuartzCore.framework */; };
+		75ADBF5D16A87AB700939381 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75ADBF5C16A87AB700939381 /* QuartzCore.framework */; };
 		CD93CD07168C883E0038D8F7 /* VueConnexion.m in Sources */ = {isa = PBXBuildFile; fileRef = CD93CD06168C883E0038D8F7 /* VueConnexion.m */; };
 		CD93CD18168C9A160038D8F7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CD93CD17168C9A160038D8F7 /* Default.png */; };
 		CDCE2C581684AB0F00FFAEE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCE2C571684AB0F00FFAEE5 /* UIKit.framework */; };
@@ -18,10 +21,10 @@
 		CDCE2C681684AB0F00FFAEE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCE2C671684AB0F00FFAEE5 /* AppDelegate.m */; };
 		CDCE2C6B1684AB0F00FFAEE5 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCE2C691684AB0F00FFAEE5 /* MainStoryboard_iPhone.storyboard */; };
 		CDCE2C6E1684AB0F00FFAEE5 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCE2C6C1684AB0F00FFAEE5 /* MainStoryboard_iPad.storyboard */; };
-		CDCE2C711684AB0F00FFAEE5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCE2C701684AB0F00FFAEE5 /* FirstViewController.m */; };
+		CDCE2C711684AB0F00FFAEE5 /* ViewControllerPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCE2C701684AB0F00FFAEE5 /* ViewControllerPhoto.m */; };
 		CDCE2C731684AB0F00FFAEE5 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCE2C721684AB0F00FFAEE5 /* first.png */; };
 		CDCE2C751684AB0F00FFAEE5 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCE2C741684AB0F00FFAEE5 /* first@2x.png */; };
-		CDCE2C781684AB0F00FFAEE5 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCE2C771684AB0F00FFAEE5 /* SecondViewController.m */; };
+		CDCE2C781684AB0F00FFAEE5 /* ViewControllerRecherche.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCE2C771684AB0F00FFAEE5 /* ViewControllerRecherche.m */; };
 		CDCE2C7A1684AB0F00FFAEE5 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCE2C791684AB0F00FFAEE5 /* second.png */; };
 		CDCE2C7C1684AB0F00FFAEE5 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCE2C7B1684AB0F00FFAEE5 /* second@2x.png */; };
 		CDCE2C841684AB0F00FFAEE5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCE2C831684AB0F00FFAEE5 /* SenTestingKit.framework */; };
@@ -44,6 +47,10 @@
 /* Begin PBXFileReference section */
 		75190BCA168CA65B00364E2B /* ViewControllerInscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerInscription.h; sourceTree = "<group>"; };
 		75190BCB168CA65B00364E2B /* ViewControllerInscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerInscription.m; sourceTree = "<group>"; };
+		75ADBF5716A875F800939381 /* StoryboardSegueCustomLeftToRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardSegueCustomLeftToRight.h; sourceTree = "<group>"; };
+		75ADBF5816A875F800939381 /* StoryboardSegueCustomLeftToRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardSegueCustomLeftToRight.m; sourceTree = "<group>"; };
+		75ADBF5A16A87A8C00939381 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		75ADBF5C16A87AB700939381 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CD93CD05168C883E0038D8F7 /* VueConnexion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VueConnexion.h; path = ../VueConnexion.h; sourceTree = "<group>"; };
 		CD93CD06168C883E0038D8F7 /* VueConnexion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VueConnexion.m; path = ../VueConnexion.m; sourceTree = "<group>"; };
 		CD93CD17168C9A160038D8F7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -59,12 +66,12 @@
 		CDCE2C671684AB0F00FFAEE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CDCE2C6A1684AB0F00FFAEE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		CDCE2C6D1684AB0F00FFAEE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		CDCE2C6F1684AB0F00FFAEE5 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		CDCE2C701684AB0F00FFAEE5 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		CDCE2C6F1684AB0F00FFAEE5 /* ViewControllerPhoto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerPhoto.h; sourceTree = "<group>"; };
+		CDCE2C701684AB0F00FFAEE5 /* ViewControllerPhoto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerPhoto.m; sourceTree = "<group>"; };
 		CDCE2C721684AB0F00FFAEE5 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		CDCE2C741684AB0F00FFAEE5 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		CDCE2C761684AB0F00FFAEE5 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		CDCE2C771684AB0F00FFAEE5 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		CDCE2C761684AB0F00FFAEE5 /* ViewControllerRecherche.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerRecherche.h; sourceTree = "<group>"; };
+		CDCE2C771684AB0F00FFAEE5 /* ViewControllerRecherche.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRecherche.m; sourceTree = "<group>"; };
 		CDCE2C791684AB0F00FFAEE5 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		CDCE2C7B1684AB0F00FFAEE5 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		CDCE2C821684AB0F00FFAEE5 /* ProjetTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjetTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,9 +87,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75ADBF5B16A87A8C00939381 /* QuartzCore.framework in Frameworks */,
 				CDCE2C581684AB0F00FFAEE5 /* UIKit.framework in Frameworks */,
 				CDCE2C5A1684AB0F00FFAEE5 /* Foundation.framework in Frameworks */,
 				CDCE2C5C1684AB0F00FFAEE5 /* CoreGraphics.framework in Frameworks */,
+				75ADBF5D16A87AB700939381 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +119,7 @@
 		CDCE2C481684AB0F00FFAEE5 = {
 			isa = PBXGroup;
 			children = (
+				75ADBF5A16A87A8C00939381 /* QuartzCore.framework */,
 				CDCE2C5D1684AB0F00FFAEE5 /* Projet */,
 				CDCE2C891684AB0F00FFAEE5 /* ProjetTests */,
 				CDCE2C561684AB0F00FFAEE5 /* Frameworks */,
@@ -129,6 +139,7 @@
 		CDCE2C561684AB0F00FFAEE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75ADBF5C16A87AB700939381 /* QuartzCore.framework */,
 				CDCE2C571684AB0F00FFAEE5 /* UIKit.framework */,
 				CDCE2C591684AB0F00FFAEE5 /* Foundation.framework */,
 				CDCE2C5B1684AB0F00FFAEE5 /* CoreGraphics.framework */,
@@ -140,22 +151,24 @@
 		CDCE2C5D1684AB0F00FFAEE5 /* Projet */ = {
 			isa = PBXGroup;
 			children = (
-				75190BCA168CA65B00364E2B /* ViewControllerInscription.h */,
-				75190BCB168CA65B00364E2B /* ViewControllerInscription.m */,
-				CDCE2C661684AB0F00FFAEE5 /* AppDelegate.h */,
-				CDCE2C671684AB0F00FFAEE5 /* AppDelegate.m */,
+				75ADBF5716A875F800939381 /* StoryboardSegueCustomLeftToRight.h */,
+				75ADBF5816A875F800939381 /* StoryboardSegueCustomLeftToRight.m */,
 				CDCE2C691684AB0F00FFAEE5 /* MainStoryboard_iPhone.storyboard */,
 				CDCE2C6C1684AB0F00FFAEE5 /* MainStoryboard_iPad.storyboard */,
-				CDCE2C6F1684AB0F00FFAEE5 /* FirstViewController.h */,
-				CDCE2C701684AB0F00FFAEE5 /* FirstViewController.m */,
-				CDCE2C721684AB0F00FFAEE5 /* first.png */,
-				CDCE2C741684AB0F00FFAEE5 /* first@2x.png */,
-				CDCE2C761684AB0F00FFAEE5 /* SecondViewController.h */,
-				CDCE2C771684AB0F00FFAEE5 /* SecondViewController.m */,
-				CDCE2C791684AB0F00FFAEE5 /* second.png */,
-				CDCE2C7B1684AB0F00FFAEE5 /* second@2x.png */,
+				CDCE2C661684AB0F00FFAEE5 /* AppDelegate.h */,
+				CDCE2C671684AB0F00FFAEE5 /* AppDelegate.m */,
 				CD93CD05168C883E0038D8F7 /* VueConnexion.h */,
 				CD93CD06168C883E0038D8F7 /* VueConnexion.m */,
+				75190BCA168CA65B00364E2B /* ViewControllerInscription.h */,
+				75190BCB168CA65B00364E2B /* ViewControllerInscription.m */,
+				CDCE2C6F1684AB0F00FFAEE5 /* ViewControllerPhoto.h */,
+				CDCE2C701684AB0F00FFAEE5 /* ViewControllerPhoto.m */,
+				CDCE2C761684AB0F00FFAEE5 /* ViewControllerRecherche.h */,
+				CDCE2C771684AB0F00FFAEE5 /* ViewControllerRecherche.m */,
+				CDCE2C721684AB0F00FFAEE5 /* first.png */,
+				CDCE2C741684AB0F00FFAEE5 /* first@2x.png */,
+				CDCE2C791684AB0F00FFAEE5 /* second.png */,
+				CDCE2C7B1684AB0F00FFAEE5 /* second@2x.png */,
 				CD93CD16168C9A160038D8F7 /* image */,
 				CDCE2C5E1684AB0F00FFAEE5 /* Supporting Files */,
 			);
@@ -306,9 +319,10 @@
 			files = (
 				CDCE2C641684AB0F00FFAEE5 /* main.m in Sources */,
 				CDCE2C681684AB0F00FFAEE5 /* AppDelegate.m in Sources */,
-				CDCE2C711684AB0F00FFAEE5 /* FirstViewController.m in Sources */,
-				CDCE2C781684AB0F00FFAEE5 /* SecondViewController.m in Sources */,
+				CDCE2C711684AB0F00FFAEE5 /* ViewControllerPhoto.m in Sources */,
+				CDCE2C781684AB0F00FFAEE5 /* ViewControllerRecherche.m in Sources */,
 				CD93CD07168C883E0038D8F7 /* VueConnexion.m in Sources */,
+				75ADBF5916A875F800939381 /* StoryboardSegueCustomLeftToRight.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +434,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Projet/Projet-Prefix.pch";
 				INFOPLIST_FILE = "Projet/Projet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -431,7 +447,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Projet/Projet-Prefix.pch";
 				INFOPLIST_FILE = "Projet/Projet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface VueConnexion : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *textEmail;
-@property (weak, nonatomic) IBOutlet UITextField *textMdp;
-@property (weak, nonatomic) IBOutlet UILabel *mdpOublie;
+@property (unsafe_unretained, nonatomic) IBOutlet UITextField *textEmail;
+@property (unsafe_unretained, nonatomic) IBOutlet UITextField *textMdp;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *mdpOublie;
 - (IBAction)next:(id)sender;
 - (IBAction) confirme:(id)sender;
 - (IBAction)begin:(id)sender;
