@@ -13,5 +13,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *textMdp;
 @property (weak, nonatomic) IBOutlet UILabel *mdpOublie;
 - (IBAction)next:(id)sender;
-- (IBAction) confirme:(id)sender;       
+- (IBAction) confirme:(id)sender;
+- (IBAction)begin:(id)sender;
+-(BOOL)textFieldShouldReturn:(id)sender;
+
+- (BOOL)textFieldShouldBeginEditing:(id)sender;
 @end

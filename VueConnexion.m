@@ -17,6 +17,7 @@
 @synthesize textEmail;
 @synthesize textMdp;
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -54,5 +55,36 @@
 - (IBAction) confirme:(id)sender
 {
     [sender resignFirstResponder];
+}
+
+- (IBAction)begin:(id)sender {
+    if(sender==textEmail)
+    {
+        self.view.center=CGPointMake(self.view.center.x,80);
+    }
+    else if(sender==textMdp)
+    {
+        self.view.center=CGPointMake(self.view.center.x,0);
+    }
+    //return YES;
+}
+
+-(BOOL)textFieldShouldReturn:(id)sender
+{
+    self.view.center=CGPointMake(240,160);   //
+    [sender resignFirstResponder];
+    return YES;
+}
+- (BOOL)textFieldShouldBeginEditing:(id)sender
+{
+    if(sender==textEmail)
+    {
+        self.view.center=CGPointMake(self.view.center.x,80);
+    }
+    else if(sender==textMdp)
+    {
+        self.view.center=CGPointMake(self.view.center.x,0);
+    }
+    return YES;
 }
 @end

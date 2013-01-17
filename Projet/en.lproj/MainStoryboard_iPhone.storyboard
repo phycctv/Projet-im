@@ -25,6 +25,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
+                                    <action selector="begin:" destination="dtM-ZW-tIj" eventType="editingDidBegin" id="wC3-kn-MfE"/>
                                     <action selector="next:" destination="dtM-ZW-tIj" eventType="editingDidEndOnExit" id="we1-Dk-LSv"/>
                                 </connections>
                             </textField>
@@ -42,7 +43,6 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="confirme:" destination="dtM-ZW-tIj" eventType="editingDidEndOnExit" id="eIP-oS-TTv"/>
-                                    <action selector="textMdp:" destination="dtM-ZW-tIj" eventType="editingDidEnd" id="12b-b6-CvY"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mot de passe :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NhM-jj-eF7">
@@ -649,6 +649,7 @@
         <class className="VueConnexion" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/VueConnexion.h"/>
             <relationships>
+                <relationship kind="action" name="begin:"/>
                 <relationship kind="action" name="confirme:"/>
                 <relationship kind="action" name="next:"/>
                 <relationship kind="outlet" name="mdpOublie" candidateClass="UILabel"/>
