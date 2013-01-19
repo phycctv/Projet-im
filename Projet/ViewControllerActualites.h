@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewControllerActualites : UIViewController
+@interface ViewControllerActualites : UIViewController <UITableViewDelegate, UITableViewDataSource>
+{
+    IBOutlet UITableView *_tablevue;
+}
 
 @end
