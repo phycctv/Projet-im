@@ -14,6 +14,7 @@
 
 @implementation VueConnexion
 @synthesize mdpOublie;
+@synthesize inscription;
 @synthesize textEmail;
 @synthesize textMdp;
 
@@ -38,6 +39,7 @@
     [self setTextEmail:nil];
     [self setMdpOublie:nil];
     [self setTextMdp:nil];
+    [self setInscription:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -64,27 +66,15 @@
     }
     else if(sender==textMdp)
     {
-        self.view.center=CGPointMake(self.view.center.x,0);
+        self.view.center=CGPointMake(self.view.center.x,60);
     }
     //return YES;
 }
 
--(BOOL)textFieldShouldReturn:(id)sender
-{
-    self.view.center=CGPointMake(240,160);   //
-    [sender resignFirstResponder];
-    return YES;
+- (IBAction)end:(id)sender {
+    self.view.center=CGPointMake(self.view.center.x,230);
 }
-- (BOOL)textFieldShouldBeginEditing:(id)sender
-{
-    if(sender==textEmail)
-    {
-        self.view.center=CGPointMake(self.view.center.x,80);
-    }
-    else if(sender==textMdp)
-    {
-        self.view.center=CGPointMake(self.view.center.x,0);
-    }
-    return YES;
-}
+
+
+
 @end

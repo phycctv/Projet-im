@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		75190BCC168CA65B00364E2B /* ViewControllerInscription.m in Sources */ = {isa = PBXBuildFile; fileRef = 75190BCB168CA65B00364E2B /* ViewControllerInscription.m */; };
 		75A64AED16AAAD6D00EFACCE /* ViewControllerAfficherProfil.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A64AEC16AAAD6D00EFACCE /* ViewControllerAfficherProfil.m */; };
+=======
+>>>>>>> connection inscription
 		75ADBF5916A875F800939381 /* StoryboardSegueCustomLeftToRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ADBF5816A875F800939381 /* StoryboardSegueCustomLeftToRight.m */; };
 		75ADBF5B16A87A8C00939381 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75ADBF5A16A87A8C00939381 /* QuartzCore.framework */; };
 		75ADBF6016A8802800939381 /* ViewControllerInformations.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ADBF5F16A8802800939381 /* ViewControllerInformations.m */; };
@@ -21,6 +24,7 @@
 		75ADBF7516A883FF00939381 /* ViewControllerCarteProfil.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ADBF7416A883FE00939381 /* ViewControllerCarteProfil.m */; };
 		CD93CD07168C883E0038D8F7 /* VueConnexion.m in Sources */ = {isa = PBXBuildFile; fileRef = CD93CD06168C883E0038D8F7 /* VueConnexion.m */; };
 		CD93CD18168C9A160038D8F7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CD93CD17168C9A160038D8F7 /* Default.png */; };
+		CDCB1F1816AACA10000AFB97 /* ViewControllerInscription.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB1F1716AACA10000AFB97 /* ViewControllerInscription.m */; };
 		CDCE2C581684AB0F00FFAEE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCE2C571684AB0F00FFAEE5 /* UIKit.framework */; };
 		CDCE2C5A1684AB0F00FFAEE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCE2C591684AB0F00FFAEE5 /* Foundation.framework */; };
 		CDCE2C5C1684AB0F00FFAEE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCE2C5B1684AB0F00FFAEE5 /* CoreGraphics.framework */; };
@@ -53,10 +57,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		75190BCA168CA65B00364E2B /* ViewControllerInscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerInscription.h; sourceTree = "<group>"; };
 		75190BCB168CA65B00364E2B /* ViewControllerInscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerInscription.m; sourceTree = "<group>"; };
 		75A64AEB16AAAD6D00EFACCE /* ViewControllerAfficherProfil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerAfficherProfil.h; sourceTree = "<group>"; };
 		75A64AEC16AAAD6D00EFACCE /* ViewControllerAfficherProfil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerAfficherProfil.m; sourceTree = "<group>"; };
+=======
+>>>>>>> connection inscription
 		75ADBF5716A875F800939381 /* StoryboardSegueCustomLeftToRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardSegueCustomLeftToRight.h; sourceTree = "<group>"; };
 		75ADBF5816A875F800939381 /* StoryboardSegueCustomLeftToRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardSegueCustomLeftToRight.m; sourceTree = "<group>"; };
 		75ADBF5A16A87A8C00939381 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -79,6 +86,8 @@
 		CD93CD05168C883E0038D8F7 /* VueConnexion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VueConnexion.h; path = ../VueConnexion.h; sourceTree = "<group>"; };
 		CD93CD06168C883E0038D8F7 /* VueConnexion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VueConnexion.m; path = ../VueConnexion.m; sourceTree = "<group>"; };
 		CD93CD17168C9A160038D8F7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CDCB1F1616AACA10000AFB97 /* ViewControllerInscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerInscription.h; sourceTree = "<group>"; };
+		CDCB1F1716AACA10000AFB97 /* ViewControllerInscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerInscription.m; sourceTree = "<group>"; };
 		CDCE2C531684AB0F00FFAEE5 /* Projet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Projet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCE2C571684AB0F00FFAEE5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CDCE2C591684AB0F00FFAEE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -182,8 +191,8 @@
 				75ADBF5816A875F800939381 /* StoryboardSegueCustomLeftToRight.m */,
 				CD93CD05168C883E0038D8F7 /* VueConnexion.h */,
 				CD93CD06168C883E0038D8F7 /* VueConnexion.m */,
-				75190BCA168CA65B00364E2B /* ViewControllerInscription.h */,
-				75190BCB168CA65B00364E2B /* ViewControllerInscription.m */,
+				CDCB1F1616AACA10000AFB97 /* ViewControllerInscription.h */,
+				CDCB1F1716AACA10000AFB97 /* ViewControllerInscription.m */,
 				75ADBF5E16A8802800939381 /* ViewControllerInformations.h */,
 				75ADBF5F16A8802800939381 /* ViewControllerInformations.m */,
 				75ADBF6116A8807300939381 /* ViewControllerPhotoInscription.h */,
@@ -372,7 +381,11 @@
 				75ADBF6F16A883C500939381 /* ViewControllerContactsProfil.m in Sources */,
 				75ADBF7216A883DE00939381 /* ViewControllerInfosProfil.m in Sources */,
 				75ADBF7516A883FF00939381 /* ViewControllerCarteProfil.m in Sources */,
+<<<<<<< HEAD
 				75A64AED16AAAD6D00EFACCE /* ViewControllerAfficherProfil.m in Sources */,
+=======
+				CDCB1F1816AACA10000AFB97 /* ViewControllerInscription.m in Sources */,
+>>>>>>> connection inscription
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +394,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDCE2C911684AB0F00FFAEE5 /* ProjetTests.m in Sources */,
-				75190BCC168CA65B00364E2B /* ViewControllerInscription.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

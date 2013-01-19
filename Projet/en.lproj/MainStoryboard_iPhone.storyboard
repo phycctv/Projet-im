@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="czJ-2I-yUH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="czJ-2I-yUH">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
         <!--Vue Connexion-->
@@ -10,7 +10,7 @@
             <objects>
                 <viewController id="dtM-ZW-tIj" customClass="VueConnexion" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Szc-qK-d2u">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bienvenue sur ³TriAngle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Tr-VF-DmO">
@@ -26,6 +26,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <action selector="begin:" destination="dtM-ZW-tIj" eventType="editingDidBegin" id="wC3-kn-MfE"/>
+                                    <action selector="end:" destination="dtM-ZW-tIj" eventType="editingDidEnd" id="Zyf-qc-HSI"/>
                                     <action selector="next:" destination="dtM-ZW-tIj" eventType="editingDidEndOnExit" id="we1-Dk-LSv"/>
                                 </connections>
                             </textField>
@@ -42,7 +43,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                 <connections>
+                                    <action selector="begin:" destination="dtM-ZW-tIj" eventType="editingDidBegin" id="bjg-ns-Zyv"/>
                                     <action selector="confirme:" destination="dtM-ZW-tIj" eventType="editingDidEndOnExit" id="eIP-oS-TTv"/>
+                                    <action selector="end:" destination="dtM-ZW-tIj" eventType="editingDidEnd" id="HPn-Mt-sAc"/>
+                                    <segue destination="4" kind="push" identifier="connectionDone" id="hXs-G1-Vop"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mot de passe :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NhM-jj-eF7">
@@ -119,7 +123,7 @@
             <objects>
                 <viewController id="bDL-qa-w8B" customClass="ViewControllerInformations" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bFM-6J-3Wj">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="HHC-Ay-UTV">
@@ -257,7 +261,7 @@
             <objects>
                 <viewController id="Lsz-T7-EN4" customClass="ViewControllerPhotoInscription" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LU1-U4-Q4Q">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Prise de la photo !!!!!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="30K-jv-M91">
@@ -341,7 +345,7 @@
             <objects>
                 <viewController title="Actualites" id="dqp-kA-TIe" customClass="ViewControllerActualites" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hgx-aQ-15m">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="N9U-zq-j3U">
@@ -428,7 +432,7 @@
             <objects>
                 <viewController title="Notifications" id="2" customClass="ViewControllerNotifications" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="photo" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="20">
@@ -463,7 +467,7 @@
             <objects>
                 <viewController title="Recherche" id="3" customClass="ViewControllerRecherche" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="17">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Xiaowei est cool" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="22">
@@ -504,7 +508,7 @@
             <objects>
                 <viewController id="cyM-ec-TWD" customClass="ViewControllerInscription" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="voO-tF-p2r">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="fJJ-Dd-lt7">
@@ -529,22 +533,37 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="S4Q-K1-esi">
-                                <rect key="frame" x="155" y="118" width="145" height="30"/>
+                                <rect key="frame" x="155" y="122" width="145" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="begin:" destination="cyM-ec-TWD" eventType="editingDidBegin" id="wOu-11-yQy"/>
+                                    <action selector="end:" destination="cyM-ec-TWD" eventType="editingDidEnd" id="1gK-de-qbE"/>
+                                    <action selector="next:" destination="cyM-ec-TWD" eventType="editingDidEndOnExit" id="e0u-sv-DmC"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="150-lH-Fh3">
-                                <rect key="frame" x="155" y="185" width="145" height="30"/>
+                                <rect key="frame" x="155" y="173" width="145" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="begin:" destination="cyM-ec-TWD" eventType="editingDidBegin" id="hpw-bC-10v"/>
+                                    <action selector="end:" destination="cyM-ec-TWD" eventType="editingDidEnd" id="70W-2z-I3u"/>
+                                    <action selector="next:" destination="cyM-ec-TWD" eventType="editingDidEndOnExit" id="Kly-DF-QtF"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="ph2-rM-IMX">
-                                <rect key="frame" x="155" y="255" width="145" height="30"/>
+                                <rect key="frame" x="155" y="214" width="145" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="begin:" destination="cyM-ec-TWD" eventType="editingDidBegin" id="XQL-vy-d9X"/>
+                                    <action selector="done:" destination="cyM-ec-TWD" eventType="editingDidEndOnExit" id="UsP-lX-1SV"/>
+                                    <action selector="end:" destination="cyM-ec-TWD" eventType="editingDidEnd" id="ovW-MN-CZd"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="e-Mail*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TC2-TL-zcH">
                                 <rect key="frame" x="38" y="122" width="60" height="21"/>
@@ -554,14 +573,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mot de passe*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cnf-Iv-4E2">
-                                <rect key="frame" x="33" y="188" width="114" height="21"/>
+                                <rect key="frame" x="33" y="177" width="114" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Confirmation du mot de passe*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LMc-GL-7LD">
-                                <rect key="frame" x="33" y="223" width="235" height="24"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Confirmation *" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LMc-GL-7LD">
+                                <rect key="frame" x="33" y="217" width="114" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -593,6 +612,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="dRo-lQ-7lo"/>
+                    <connections>
+                        <outlet property="textConfirmation" destination="ph2-rM-IMX" id="FKp-8r-fuH"/>
+                        <outlet property="textEmail" destination="S4Q-K1-esi" id="RBg-8N-9ql"/>
+                        <outlet property="textMdp" destination="150-lH-Fh3" id="LSX-kk-iuE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nSj-6k-yGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -618,14 +642,14 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1212" y="214"/>
+            <point key="canvasLocation" x="1212" y="271"/>
         </scene>
         <!--View Controller Contacts Profil - Contacts-->
         <scene sceneID="sMH-Eq-gnr">
             <objects>
                 <viewController title="Contacts" id="RxC-pz-0f9" customClass="ViewControllerContactsProfil" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vnT-Be-udZ">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="kW6-Zp-wmp">
@@ -646,7 +670,7 @@
             <objects>
                 <viewController title="Infos" id="Hf6-fh-5eU" customClass="ViewControllerInfosProfil" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="krD-SM-Zdr">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Tfm-Tq-EtP">
@@ -681,7 +705,7 @@
             <objects>
                 <viewController title="Carte (timeline)" id="lbs-33-5GC" customClass="ViewControllerCarteProfil" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uec-99-4KR">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="ztS-oR-bNL">
@@ -702,7 +726,7 @@
             <objects>
                 <viewController title="Photos" id="nsU-yT-zpT" customClass="ViewControllerPhotos" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Klo-aN-vsl">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="T0w-IM-2FZ">
@@ -816,6 +840,7 @@
             </relationships>
         </class>
     </classes>
+
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
@@ -826,4 +851,5 @@
         <segue reference="lQZ-GM-NRu"/>
         <segue reference="51N-Jt-oqX"/>
     </inferredMetricsTieBreakers>
+
 </document>

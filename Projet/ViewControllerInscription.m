@@ -2,8 +2,8 @@
 //  ViewControllerInscription.m
 //  Projet
 //
-//  Created by marcelin on 27/12/12.
-//
+//  Created by Xiaowei ZHANG on 13-1-19.
+//  Copyright (c) 2013年 __MyCompanyName__. All rights reserved.
 //
 
 #import "ViewControllerInscription.h"
@@ -13,6 +13,9 @@
 @end
 
 @implementation ViewControllerInscription
+@synthesize textEmail;
+@synthesize textMdp;
+@synthesize textConfirmation;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,10 +32,47 @@
 	// Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewDidUnload
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self setTextEmail:nil];
+    [self setTextMdp:nil];
+    [self setTextConfirmation:nil];
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (IBAction)next:(id)sender {
+    if(sender==textEmail)
+    {
+        [textMdp becomeFirstResponder];
+    }
+    else if(sender==textMdp)
+    {
+        [textConfirmation becomeFirstResponder];
+    }
+}
+
+- (IBAction)done:(id)sender {
+     [sender resignFirstResponder];
+}
+
+- (IBAction)begin:(id)sender {
+    if(sender==textEmail)
+    {
+        self.view.center=CGPointMake(self.view.center.x,170);
+    }
+    else if(sender==textMdp || sender==textConfirmation)
+    {
+        self.view.center=CGPointMake(self.view.center.x,120);
+    }
+}
+
+- (IBAction)end:(id)sender {
+    self.view.center=CGPointMake(self.view.center.x,230);
+}
 @end

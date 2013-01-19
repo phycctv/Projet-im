@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface VueConnexion : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *inscription;
 @property (unsafe_unretained, nonatomic) IBOutlet UITextField *textEmail;
 @property (unsafe_unretained, nonatomic) IBOutlet UITextField *textMdp;
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *mdpOublie;
 - (IBAction)next:(id)sender;
 - (IBAction) confirme:(id)sender;
 - (IBAction)begin:(id)sender;
--(BOOL)textFieldShouldReturn:(id)sender;
+- (IBAction)end:(id)sender;
 
-- (BOOL)textFieldShouldBeginEditing:(id)sender;
 @end
