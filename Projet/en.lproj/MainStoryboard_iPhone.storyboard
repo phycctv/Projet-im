@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="czJ-2I-yUH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="czJ-2I-yUH">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
         <!--Vue Connexion-->
@@ -10,7 +10,7 @@
             <objects>
                 <viewController id="dtM-ZW-tIj" customClass="VueConnexion" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Szc-qK-d2u">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bienvenue sur ³TriAngle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Tr-VF-DmO">
@@ -46,7 +46,7 @@
                                     <action selector="begin:" destination="dtM-ZW-tIj" eventType="editingDidBegin" id="bjg-ns-Zyv"/>
                                     <action selector="confirme:" destination="dtM-ZW-tIj" eventType="editingDidEndOnExit" id="eIP-oS-TTv"/>
                                     <action selector="end:" destination="dtM-ZW-tIj" eventType="editingDidEnd" id="HPn-Mt-sAc"/>
-                                    <segue destination="4" kind="push" identifier="connectionDone" id="hXs-G1-Vop"/>
+                                    <segue destination="4" kind="push" id="Ar4-ta-D1L"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mot de passe :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NhM-jj-eF7">
@@ -123,7 +123,7 @@
             <objects>
                 <viewController id="bDL-qa-w8B" customClass="ViewControllerInformations" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bFM-6J-3Wj">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="HHC-Ay-UTV">
@@ -173,30 +173,55 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                <connections>
+                                    <action selector="begin:" destination="bDL-qa-w8B" eventType="editingDidBegin" id="t5I-ea-fej"/>
+                                    <action selector="end:" destination="bDL-qa-w8B" eventType="editingDidEnd" id="1WE-87-RXk"/>
+                                    <action selector="next:" destination="bDL-qa-w8B" eventType="editingDidEndOnExit" id="kYW-vJ-30n"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="7aJ-hT-6Bq">
                                 <rect key="frame" x="167" y="182" width="148" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="begin:" destination="bDL-qa-w8B" eventType="editingDidBegin" id="mNv-Kj-Gdp"/>
+                                    <action selector="end:" destination="bDL-qa-w8B" eventType="editingDidEnd" id="1XC-ph-pY1"/>
+                                    <action selector="next:" destination="bDL-qa-w8B" eventType="editingDidEndOnExit" id="ACb-oU-nbk"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="mm" borderStyle="roundedRect" minimumFontSize="17" id="S8p-KA-UfZ">
                                 <rect key="frame" x="215" y="237" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="begin:" destination="bDL-qa-w8B" eventType="editingDidBegin" id="GIr-uG-oha"/>
+                                    <action selector="end:" destination="bDL-qa-w8B" eventType="editingDidEnd" id="ABE-d6-MR1"/>
+                                    <action selector="next:" destination="bDL-qa-w8B" eventType="editingDidEndOnExit" id="ycM-4N-Vrj"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="jj" borderStyle="roundedRect" minimumFontSize="17" id="U6k-dA-0uj">
                                 <rect key="frame" x="167" y="237" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="begin:" destination="bDL-qa-w8B" eventType="editingDidBegin" id="HPw-S5-8LC"/>
+                                    <action selector="end:" destination="bDL-qa-w8B" eventType="editingDidEnd" id="IYu-ZV-pdT"/>
+                                    <action selector="next:" destination="bDL-qa-w8B" eventType="editingDidEndOnExit" id="3KM-mw-1ta"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="aaaa" borderStyle="roundedRect" minimumFontSize="17" id="sz2-9C-ZfF">
                                 <rect key="frame" x="262" y="237" width="53" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="begin:" destination="bDL-qa-w8B" eventType="editingDidBegin" id="9XU-MO-hMQ"/>
+                                    <action selector="end:" destination="bDL-qa-w8B" eventType="editingDidEnd" id="3Zk-jZ-cZs"/>
+                                    <action selector="next:" destination="bDL-qa-w8B" eventType="editingDidEndOnExit" id="Gu5-hg-7FR"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="/" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xQe-tG-vhr">
                                 <rect key="frame" x="255" y="240" width="8" height="21"/>
@@ -217,6 +242,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <connections>
+                                    <action selector="begin:" destination="bDL-qa-w8B" eventType="editingDidBegin" id="ujS-Xy-M3x"/>
+                                    <action selector="confirmation:" destination="bDL-qa-w8B" eventType="editingDidEndOnExit" id="ffA-uH-QK2"/>
+                                    <action selector="end:" destination="bDL-qa-w8B" eventType="editingDidEnd" id="EYz-6j-yog"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Les champs marqués d'une * sont obligatoires." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jtJ-Ej-y0W">
                                 <rect key="frame" x="20" y="419" width="252" height="21"/>
@@ -251,6 +281,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ha5-fG-zeX"/>
+                    <connections>
+                        <outlet property="textAnnee" destination="sz2-9C-ZfF" id="NHW-iO-Ipm"/>
+                        <outlet property="textJour" destination="U6k-dA-0uj" id="Nce-8Q-2ys"/>
+                        <outlet property="textMois" destination="S8p-KA-UfZ" id="b3N-mi-6hj"/>
+                        <outlet property="textNom" destination="EdF-oA-6y7" id="90y-pX-10b"/>
+                        <outlet property="textPrenom" destination="7aJ-hT-6Bq" id="fLs-cY-lT8"/>
+                        <outlet property="textTel" destination="hCQ-4K-BWo" id="9Fl-n6-O4n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="atR-7s-3V2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -261,7 +299,7 @@
             <objects>
                 <viewController id="Lsz-T7-EN4" customClass="ViewControllerPhotoInscription" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LU1-U4-Q4Q">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Prise de la photo !!!!!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="30K-jv-M91">
@@ -435,7 +473,7 @@
             <objects>
                 <viewController title="Notifications" id="2" customClass="ViewControllerNotifications" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="uRO-CR-WuS">
@@ -511,7 +549,7 @@
             <objects>
                 <viewController id="cyM-ec-TWD" customClass="ViewControllerInscription" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="voO-tF-p2r">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="fJJ-Dd-lt7">
@@ -857,6 +895,18 @@
         </class>
         <class className="ViewControllerInformations" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerInformations.h"/>
+            <relationships>
+                <relationship kind="action" name="begin:"/>
+                <relationship kind="action" name="confirmation:"/>
+                <relationship kind="action" name="end:"/>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="outlet" name="textAnnee" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textJour" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textMois" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textNom" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textPrenom" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textTel" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="ViewControllerInfosProfil" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerInfosProfil.h"/>
@@ -915,5 +965,6 @@
         <segue reference="YER-3a-gjy"/>
         <segue reference="lQZ-GM-NRu"/>
         <segue reference="cVs-Lm-5g5"/>
+        <segue reference="zpb-9d-E5R"/>
     </inferredMetricsTieBreakers>
 </document>
