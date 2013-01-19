@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewControllerRecherche: UIViewController
+@interface ViewControllerRecherche: UIViewController <UITableViewDelegate, UITableViewDataSource>
+{
+    IBOutlet UITableView *tableViewRecherche;
+    NSArray *tableViewDataSource;
+}
+
 
 @end

@@ -95,7 +95,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="0.4899342142" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <navigationItem title="³TriAngle" id="58o-ko-Dvf"/>
+                                    <navigationItem title="journeyes" id="58o-ko-Dvf"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Connection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cvy-LD-YrW">
@@ -131,7 +131,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="0.4899342142" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <navigationItem title="³TriAngle" id="5JT-pz-Eyw">
+                                    <navigationItem title="journeyes" id="5JT-pz-Eyw">
                                         <barButtonItem key="leftBarButtonItem" title="Inscription" id="hAi-dK-XGt">
                                             <connections>
                                                 <segue destination="cyM-ec-TWD" kind="custom" customClass="StoryboardSegueCustomLeftToRight" id="lQZ-GM-NRu"/>
@@ -276,7 +276,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="0.4899342142" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <navigationItem title="³TriAngle" id="2yO-Rn-EET">
+                                    <navigationItem title="journeyes" id="2yO-Rn-EET">
                                         <barButtonItem key="leftBarButtonItem" title="Informations" id="4tt-tN-jcU">
                                             <connections>
                                                 <segue destination="bDL-qa-w8B" kind="custom" customClass="StoryboardSegueCustomLeftToRight" id="YER-3a-gjy"/>
@@ -375,6 +375,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Actualités" id="XmY-Um-mo9"/>
+                    <connections>
+                        <outlet property="tableViewActu" destination="ZY1-Br-gCq" id="l5Y-Wu-zde"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKd-ur-rHc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -436,13 +439,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="uRO-CR-WuS">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                                <rect key="frame" x="0.0" y="49" width="320" height="411"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="K4t-11-6Lv">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="2" id="joY-sU-ftq"/>
+                                            <outlet property="delegate" destination="2" id="YQX-wq-KDh"/>
+                                        </connections>
                                     </tableView>
                                 </subviews>
                             </scrollView>
@@ -450,6 +457,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Notifications" image="first" id="7"/>
+                    <connections>
+                        <outlet property="tableViewNotif" destination="K4t-11-6Lv" id="GQt-MN-goQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
@@ -463,27 +473,34 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" id="Sbw-IT-hsu">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="n4C-XG-lML">
-                                <rect key="frame" x="0.0" y="44" width="320" height="367"/>
+                                <rect key="frame" x="0.0" y="49" width="320" height="411"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jXe-UF-LlJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
+                                        <rect key="frame" x="0.0" y="44" width="320" height="367"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="3" id="iQc-eA-qIa"/>
+                                            <outlet property="delegate" destination="3" id="m67-Mx-GTM"/>
+                                        </connections>
                                     </tableView>
+                                    <searchBar contentMode="redraw" id="Sbw-IT-hsu">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
                                 </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Recherche" image="second" id="6"/>
+                    <connections>
+                        <outlet property="tableViewRecherche" destination="jXe-UF-LlJ" id="b4c-Ls-2Wq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
             </objects>
@@ -502,7 +519,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <navigationItem title="³TriAngle" id="yvP-rE-6Vh">
+                                    <navigationItem title="journeyes" id="yvP-rE-6Vh">
                                         <barButtonItem key="leftBarButtonItem" title="Connexion" id="g6G-k2-0Fn">
                                             <connections>
                                                 <segue destination="dtM-ZW-tIj" kind="custom" customClass="StoryboardSegueCustomLeftToRight" id="Dov-N9-xfJ"/>
@@ -641,11 +658,25 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="kW6-Zp-wmp">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="j5e-Bh-wUS">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="RxC-pz-0f9" id="5JR-Ec-fc9"/>
+                                            <outlet property="delegate" destination="RxC-pz-0f9" id="CJw-eQ-D91"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Contacts" id="C5d-fR-LcA"/>
+                    <connections>
+                        <outlet property="tableViewContacts" destination="j5e-Bh-wUS" id="hK8-gg-LOK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VVR-45-9xo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -692,6 +723,17 @@
                                 </items>
                                 <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="PaH-H5-p4O">
+                                <rect key="frame" x="0.0" y="44" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="peW-6U-yZ9">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableView>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -809,6 +851,9 @@
         </class>
         <class className="ViewControllerContactsProfil" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerContactsProfil.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableViewContacts" candidateClass="UITableView"/>
+            </relationships>
         </class>
         <class className="ViewControllerInformations" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerInformations.h"/>
@@ -830,6 +875,9 @@
         </class>
         <class className="ViewControllerNotifications" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerNotifications.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableViewNotif" candidateClass="UITableView"/>
+            </relationships>
         </class>
         <class className="ViewControllerPhotoInscription" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerPhotoInscription.h"/>
@@ -839,6 +887,9 @@
         </class>
         <class className="ViewControllerRecherche" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerRecherche.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableViewRecherche" candidateClass="UITableView"/>
+            </relationships>
         </class>
         <class className="VueConnexion" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/VueConnexion.h"/>
@@ -860,9 +911,9 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Dov-N9-xfJ"/>
-        <segue reference="tAk-ts-Zsd"/>
-        <segue reference="51N-Jt-oqX"/>
-        <segue reference="zpb-9d-E5R"/>
+        <segue reference="F0z-Z9-ven"/>
+        <segue reference="YER-3a-gjy"/>
+        <segue reference="lQZ-GM-NRu"/>
+        <segue reference="cVs-Lm-5g5"/>
     </inferredMetricsTieBreakers>
 </document>

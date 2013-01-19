@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewControllerContactsProfil : UIViewController
+@interface ViewControllerContactsProfil : UIViewController <UITableViewDelegate, UITableViewDataSource>
+{
+    IBOutlet UITableView *tableViewContacts;
+    NSArray *tableViewDataSource;
+}
 
 @end
