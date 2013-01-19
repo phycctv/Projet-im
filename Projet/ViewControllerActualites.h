@@ -10,7 +10,8 @@
 
 @interface ViewControllerActualites : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
-    IBOutlet UITableView *_tablevue;
+    IBOutlet UITableView *tableViewActu;
+    NSArray *tableViewDataSource;
 }
 
 @end

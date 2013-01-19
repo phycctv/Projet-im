@@ -698,7 +698,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qUT-ta-S9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1627" y="2622"/>
+            <point key="canvasLocation" x="1627" y="2590"/>
         </scene>
         <!--View Controller Carte Profil - Carte (timeline)-->
         <scene sceneID="pry-VE-2Sv">
@@ -719,7 +719,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fe3-nr-xpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2068" y="2622"/>
+            <point key="canvasLocation" x="2068" y="2590"/>
         </scene>
         <!--View Controller Photos - Photos-->
         <scene sceneID="wpD-e2-RTv">
@@ -795,7 +795,7 @@
         <class className="ViewControllerActualites" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerActualites.h"/>
             <relationships>
-                <relationship kind="outlet" name="_tablevue" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="tableViewActu" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="ViewControllerAfficherProfil" superclassName="UIViewController">
