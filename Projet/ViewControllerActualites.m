@@ -27,6 +27,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    // récuperer un tableau de 10 cases contenant un type structuré : un idphotoprofil, un lienphotoprofil, un nom profil, un id photo, un lien photo, un nom photo, un commentaire (peut être vide), une date
+    // convertir ça en type objective-C
+    // le mettre dans tableViewDataSource
     tableViewDataSource = [[NSArray alloc] initWithObjects:@"Item 1", @"Item 2", @"Item 3", nil];
 }
 
@@ -43,7 +46,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 50;
+    return 100;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -61,5 +64,15 @@
     
     return cell;
 }
+
+//-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//  le code ressemblera probablement à ça pour accéder au machin sélectionné.
+//
+//    TActualite *actu = [tableViewDataSource objectAtIndex:[indexPath row]];
+//    NSString *idImage = actu->idImage;
+//
+//  FIXME
+//}
 
 @end

@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    // recupere un tableau de type structuré qui contient : un idProfil, un nom profil
     tableViewDataSource = [[NSArray alloc] initWithObjects:@"Item 1", @"Item 2", @"Item 3", nil];
 }
 
@@ -61,5 +62,15 @@
     
     return cell;
 }
+
+//-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//  le code ressemblera probablement à ça pour accéder au machin sélectionné.
+//
+//    TContact *cont = [tableViewDataSource objectAtIndex:[indexPath row]];
+//    NSString *idProfil = cont->idProfil;
+//
+//    FIXME
+//}
 
 @end
