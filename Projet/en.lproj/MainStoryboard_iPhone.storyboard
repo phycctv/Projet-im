@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="czJ-2I-yUH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="czJ-2I-yUH">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
         <!--Vue Connexion-->
@@ -10,7 +10,7 @@
             <objects>
                 <viewController id="dtM-ZW-tIj" customClass="VueConnexion" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Szc-qK-d2u">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bienvenue sur ³TriAngle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Tr-VF-DmO">
@@ -122,7 +122,7 @@
             <objects>
                 <viewController id="bDL-qa-w8B" customClass="ViewControllerInformations" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bFM-6J-3Wj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="HHC-Ay-UTV">
@@ -298,7 +298,7 @@
             <objects>
                 <viewController id="Lsz-T7-EN4" customClass="ViewControllerPhotoInscription" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LU1-U4-Q4Q">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Prise de la photo !!!!!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="30K-jv-M91">
@@ -551,7 +551,7 @@
             <objects>
                 <viewController id="cyM-ec-TWD" customClass="ViewControllerInscription" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="voO-tF-p2r">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="fJJ-Dd-lt7">
@@ -873,12 +873,102 @@
         <image name="first" width="16" height="16"/>
         <image name="second" width="16" height="16"/>
     </resources>
+    <classes>
+        <class className="ViewControllerActualites" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerActualites.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableViewActu" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ViewControllerAfficherProfil" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerAfficherProfil.h"/>
+        </class>
+        <class className="ViewControllerApresPhoto" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerApresPhoto.h"/>
+        </class>
+        <class className="ViewControllerCarteProfil" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerCarteProfil.h"/>
+        </class>
+        <class className="ViewControllerContactsProfil" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerContactsProfil.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableViewContacts" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ViewControllerInformations" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerInformations.h"/>
+            <relationships>
+                <relationship kind="action" name="begin:"/>
+                <relationship kind="action" name="confirmation:"/>
+                <relationship kind="action" name="end:"/>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="outlet" name="textAnnee" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textJour" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textMois" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textNom" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textPrenom" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textTel" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="ViewControllerInfosProfil" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerInfosProfil.h"/>
+        </class>
+        <class className="ViewControllerInscription" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerInscription.h"/>
+            <relationships>
+                <relationship kind="action" name="begin:"/>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="end:"/>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="outlet" name="textConfirmation" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textEmail" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textMdp" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="ViewControllerNotifications" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerNotifications.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableViewNotif" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ViewControllerPhotoInscription" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerPhotoInscription.h"/>
+            <relationships>
+                <relationship kind="outlet" name="butPrendrePhoto" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="ViewControllerPhotosProfil" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerPhotosProfil.h"/>
+        </class>
+        <class className="ViewControllerRecherche" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerRecherche.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableViewRecherche" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="VueConnexion" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VueConnexion.h"/>
+            <relationships>
+                <relationship kind="action" name="begin:"/>
+                <relationship kind="action" name="confirme:"/>
+                <relationship kind="action" name="end:"/>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="outlet" name="inscription" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="mdpOublie" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="textEmail" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textMdp" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="tAk-ts-Zsd"/>
+        <segue reference="F0z-Z9-ven"/>
+        <segue reference="YER-3a-gjy"/>
         <segue reference="cVs-Lm-5g5"/>
     </inferredMetricsTieBreakers>
 </document>
