@@ -13,6 +13,7 @@
 @end
 
 @implementation ViewControllerPhotoInscription
+@synthesize butPrendrePhoto;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,4 +36,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload {
+    [self setButPrendrePhoto:nil];
+    [super viewDidUnload];
+}
 @end

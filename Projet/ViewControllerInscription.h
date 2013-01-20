@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewControllerInscription : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *textEmail;
-@property (weak, nonatomic) IBOutlet UITextField *textMdp;
-@property (weak, nonatomic) IBOutlet UITextField *textConfirmation;
+@property (unsafe_unretained, nonatomic) IBOutlet UITextField *textEmail;
+@property (unsafe_unretained, nonatomic) IBOutlet UITextField *textMdp;
+@property (unsafe_unretained, nonatomic) IBOutlet UITextField *textConfirmation;
 - (IBAction)next:(id)sender;
 - (IBAction)done:(id)sender;
 - (IBAction)begin:(id)sender;

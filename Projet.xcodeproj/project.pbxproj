@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		75190BCC168CA65B00364E2B /* ViewControllerInscription.m in Sources */ = {isa = PBXBuildFile; fileRef = 75190BCB168CA65B00364E2B /* ViewControllerInscription.m */; };
 		75A64AED16AAAD6D00EFACCE /* ViewControllerAfficherProfil.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A64AEC16AAAD6D00EFACCE /* ViewControllerAfficherProfil.m */; };
 		75ADBF5916A875F800939381 /* StoryboardSegueCustomLeftToRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ADBF5816A875F800939381 /* StoryboardSegueCustomLeftToRight.m */; };
 		75ADBF5B16A87A8C00939381 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75ADBF5A16A87A8C00939381 /* QuartzCore.framework */; };
@@ -54,8 +53,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		75190BCA168CA65B00364E2B /* ViewControllerInscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerInscription.h; sourceTree = "<group>"; };
-		75190BCB168CA65B00364E2B /* ViewControllerInscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerInscription.m; sourceTree = "<group>"; };
 		75A64AEB16AAAD6D00EFACCE /* ViewControllerAfficherProfil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerAfficherProfil.h; sourceTree = "<group>"; };
 		75A64AEC16AAAD6D00EFACCE /* ViewControllerAfficherProfil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerAfficherProfil.m; sourceTree = "<group>"; };
 		75ADBF5716A875F800939381 /* StoryboardSegueCustomLeftToRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardSegueCustomLeftToRight.h; sourceTree = "<group>"; };
@@ -484,6 +481,7 @@
 		CDCE2C951684AB0F00FFAEE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Projet/Projet-Prefix.pch";
 				INFOPLIST_FILE = "Projet/Projet-Info.plist";
@@ -497,6 +495,7 @@
 		CDCE2C961684AB0F00FFAEE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Projet/Projet-Prefix.pch";
 				INFOPLIST_FILE = "Projet/Projet-Info.plist";

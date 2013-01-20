@@ -7,6 +7,7 @@
 //
 
 #import "VueConnexion.h"
+#import "ViewControllerInscription.h"
 
 @interface VueConnexion ()
 
@@ -56,6 +57,9 @@
 
 - (IBAction) confirme:(id)sender
 {
+    UIViewController *vc2=[[ViewControllerInscription alloc] init];
+    [self.navigationController pushViewController:vc2 animated:YES];
+    [vc2 release];
     [sender resignFirstResponder];
 }
 

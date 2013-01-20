@@ -46,7 +46,6 @@
                                     <action selector="begin:" destination="dtM-ZW-tIj" eventType="editingDidBegin" id="bjg-ns-Zyv"/>
                                     <action selector="confirme:" destination="dtM-ZW-tIj" eventType="editingDidEndOnExit" id="eIP-oS-TTv"/>
                                     <action selector="end:" destination="dtM-ZW-tIj" eventType="editingDidEnd" id="HPn-Mt-sAc"/>
-                                    <segue destination="4" kind="push" id="Ar4-ta-D1L"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mot de passe :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NhM-jj-eF7">
@@ -373,6 +372,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="rca-Y9-Cde"/>
+                    <connections>
+                        <outlet property="butPrendrePhoto" destination="eCa-Si-KxF" id="bdx-Vv-r3U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fng-Ky-0WN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -383,7 +385,7 @@
             <objects>
                 <viewController title="Actualites" id="dqp-kA-TIe" customClass="ViewControllerActualites" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hgx-aQ-15m">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="N9U-zq-j3U">
@@ -473,7 +475,7 @@
             <objects>
                 <viewController title="Notifications" id="2" customClass="ViewControllerNotifications" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="uRO-CR-WuS">
@@ -508,11 +510,11 @@
             <objects>
                 <viewController title="Recherche" id="3" customClass="ViewControllerRecherche" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="17">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="n4C-XG-lML">
-                                <rect key="frame" x="0.0" y="49" width="320" height="411"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jXe-UF-LlJ">
@@ -690,7 +692,7 @@
             <objects>
                 <viewController title="Contacts" id="RxC-pz-0f9" customClass="ViewControllerContactsProfil" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vnT-Be-udZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="kW6-Zp-wmp">
@@ -725,7 +727,7 @@
             <objects>
                 <viewController title="Infos" id="Hf6-fh-5eU" customClass="ViewControllerInfosProfil" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="krD-SM-Zdr">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Tfm-Tq-EtP">
@@ -785,7 +787,7 @@
             <objects>
                 <viewController title="Carte (timeline)" id="lbs-33-5GC" customClass="ViewControllerCarteProfil" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uec-99-4KR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="ztS-oR-bNL">
@@ -806,7 +808,7 @@
             <objects>
                 <viewController title="Photos" id="nsU-yT-zpT" customClass="ViewControllerPhotosProfil" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Klo-aN-vsl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="T0w-IM-2FZ">
@@ -877,6 +879,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="zpb-9d-E5R"/>
+        <segue reference="cVs-Lm-5g5"/>
     </inferredMetricsTieBreakers>
 </document>
