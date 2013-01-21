@@ -57,10 +57,22 @@
 
 - (IBAction) confirme:(id)sender
 {
-    UIViewController *vc2=[[ViewControllerInscription alloc] init];
-    [self.navigationController pushViewController:vc2 animated:YES];
-    [vc2 release];
-    [sender resignFirstResponder];
+    if ([self.textEmail.text isEqualToString:@""]  || [self.textMdp.text isEqualToString:@""] ) {
+        UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
+                                                   message:NSLocalizedString(@"email ou mdp non saisi", @"")  
+                                                  delegate:nil 
+                                         cancelButtonTitle:NSLocalizedString(@"OK", @"")
+                                         otherButtonTitles:nil     
+                         ];
+        [view show];
+        [view release];
+            } else {
+                UIViewController *vc2=[[ViewControllerInscription alloc] init];
+                [self.navigationController pushViewController:vc2 animated:YES];
+                [vc2 release];
+                [sender resignFirstResponder];                    
+            }
+
 }
 
 - (IBAction)begin:(id)sender {
