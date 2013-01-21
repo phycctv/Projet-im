@@ -44,7 +44,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="begin:" destination="dtM-ZW-tIj" eventType="editingDidBegin" id="bjg-ns-Zyv"/>
-                                    <action selector="confirme:" destination="dtM-ZW-tIj" eventType="editingDidEndOnExit" id="eIP-oS-TTv"/>
+                                    <action selector="confirm:" destination="dtM-ZW-tIj" eventType="editingDidEndOnExit" id="MYK-kN-m2a"/>
                                     <action selector="end:" destination="dtM-ZW-tIj" eventType="editingDidEnd" id="HPn-Mt-sAc"/>
                                 </connections>
                             </textField>
@@ -617,7 +617,8 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="begin:" destination="cyM-ec-TWD" eventType="editingDidBegin" id="XQL-vy-d9X"/>
-                                    <action selector="done:" destination="cyM-ec-TWD" eventType="editingDidEndOnExit" id="UsP-lX-1SV"/>
+                                    <action selector="confirm:" destination="cyM-ec-TWD" eventType="editingDidEndOnExit" id="HU5-gc-t7g"/>
+                                    <action selector="done:" destination="cyM-ec-TWD" eventType="editingDidEndOnExit" id="ptV-Be-kgP"/>
                                     <action selector="end:" destination="cyM-ec-TWD" eventType="editingDidEnd" id="ovW-MN-CZd"/>
                                 </connections>
                             </textField>
@@ -654,6 +655,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="confirm:" destination="cyM-ec-TWD" eventType="touchDown" id="DzQ-4x-qDk"/>
                                     <segue destination="bDL-qa-w8B" kind="push" id="51N-Jt-oqX"/>
                                 </connections>
                             </button>
@@ -931,6 +933,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerInscription.h"/>
             <relationships>
                 <relationship kind="action" name="begin:"/>
+                <relationship kind="action" name="confirm:"/>
                 <relationship kind="action" name="done:"/>
                 <relationship kind="action" name="end:"/>
                 <relationship kind="action" name="next:"/>
@@ -970,7 +973,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/VueConnexion.h"/>
             <relationships>
                 <relationship kind="action" name="begin:"/>
-                <relationship kind="action" name="confirme:"/>
+                <relationship kind="action" name="confirm:"/>
                 <relationship kind="action" name="end:"/>
                 <relationship kind="action" name="next:"/>
                 <relationship kind="outlet" name="inscription" candidateClass="UIButton"/>
