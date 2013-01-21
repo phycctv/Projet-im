@@ -7,6 +7,7 @@
 //
 
 #import "ViewControllerContactsProfil.h"
+#import "ViewControllerAfficherProfil.h"
 
 @interface ViewControllerContactsProfil ()
 
@@ -28,6 +29,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     // recupere un tableau de type structuré qui contient : un idProfil, un nom profil
+    // convertir ça en type objective-C
+    // ça peut être un tableau à deux dimension : [x][2] qui récupère une chaine et la convertir. La chaine est découpée selon un caractère précis. ça semble simple.
     tableViewDataSource = [[NSArray alloc] initWithObjects:@"Item 1", @"Item 2", @"Item 3", nil];
 }
 
@@ -49,7 +52,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"MyIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
@@ -63,14 +66,23 @@
     return cell;
 }
 
-//-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//  le code ressemblera probablement à ça pour accéder au machin sélectionné.
-//
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
 //    TContact *cont = [tableViewDataSource objectAtIndex:[indexPath row]];
 //    NSString *idProfil = cont->idProfil;
-//
-//    FIXME
-//}
+
+   [self performSegueWithIdentifier:@"segueConsultProfil" sender:self];
+}
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([[segue identifier] isEqualToString:@"segueConsultProfil"])
+    {
+        NSInteger selectedIndex = [[self->tableViewContacts indexPathForSelectedRow] row];
+        ViewControllerAfficherProfil *vcap = [segue destinationViewController];
+        vcap.textAAfficher = [NSString stringWithFormat:@"%@", [tableViewDataSource objectAtIndex:selectedIndex]];
+    }
+
+}
 
 @end

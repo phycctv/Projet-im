@@ -27,8 +27,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    // récuperer un tableau de 10 cases contenant un type structuré : un idphotoprofil, un lienphotoprofil, un nom profil, un id photo, un lien photo, un nom photo, un commentaire (peut être vide), une date
+    // récuperer un tableau de 10 lignes contenant un type structuré : un idphotoprofil, un lienphotoprofil, un nom profil, un id photo, un lien photo, un nom photo, un commentaire (peut être vide), une date
     // convertir ça en type objective-C
+    // ça peut être un tableau à deux dimension : [10][8] qui récupère une chaine utf8 et la convertir. La chaine est découpée selon un caractère précis. ça semble simple.
     // le mettre dans tableViewDataSource
     tableViewDataSource = [[NSArray alloc] initWithObjects:@"Item 1", @"Item 2", @"Item 3", nil];
 }
@@ -46,7 +47,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 100;
+    return 50;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

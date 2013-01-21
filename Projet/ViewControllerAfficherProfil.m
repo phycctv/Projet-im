@@ -14,6 +14,8 @@
 
 @implementation ViewControllerAfficherProfil
 
+@synthesize textAAfficher=_textAAfficher;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,6 +29,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    _labelTest.text = _textAAfficher;
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,4 +38,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+    [_labelTest release];
+    [super dealloc];
+}
+
+- (void)viewDidUnload {
+    [self setLabelTest:nil];
+    [super viewDidUnload];
+}
 @end
