@@ -97,4 +97,26 @@
 - (IBAction)end:(id)sender {
         self.view.center=CGPointMake(self.view.center.x,230);
 }
+
+- (IBAction)changed:(id)sender {
+    if(sender==textJour)
+    {
+        if (self.textJour.text.length==2) {
+            [textMois becomeFirstResponder];
+        } 
+    }
+    else if(sender==textMois)
+    {
+        if (self.textMois.text.length==2) {
+            [textAnnee becomeFirstResponder];
+        }  
+    }
+    else if(sender==textAnnee)
+    {
+        if (self.textAnnee.text.length==4) {
+            [textTel becomeFirstResponder];
+        }
+    }
+
+}
 @end

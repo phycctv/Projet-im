@@ -41,7 +41,7 @@
                                 <rect key="frame" x="135" y="302" width="165" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="begin:" destination="dtM-ZW-tIj" eventType="editingDidBegin" id="bjg-ns-Zyv"/>
                                     <action selector="confirme:" destination="dtM-ZW-tIj" eventType="editingDidEndOnExit" id="eIP-oS-TTv"/>
@@ -171,7 +171,7 @@
                                 <rect key="frame" x="167" y="124" width="148" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <action selector="begin:" destination="bDL-qa-w8B" eventType="editingDidBegin" id="t5I-ea-fej"/>
                                     <action selector="end:" destination="bDL-qa-w8B" eventType="editingDidEnd" id="1WE-87-RXk"/>
@@ -182,7 +182,7 @@
                                 <rect key="frame" x="167" y="182" width="148" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <action selector="begin:" destination="bDL-qa-w8B" eventType="editingDidBegin" id="mNv-Kj-Gdp"/>
                                     <action selector="end:" destination="bDL-qa-w8B" eventType="editingDidEnd" id="1XC-ph-pY1"/>
@@ -193,9 +193,10 @@
                                 <rect key="frame" x="215" y="237" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <action selector="begin:" destination="bDL-qa-w8B" eventType="editingDidBegin" id="GIr-uG-oha"/>
+                                    <action selector="changed:" destination="bDL-qa-w8B" eventType="editingChanged" id="hkZ-3D-w3x"/>
                                     <action selector="end:" destination="bDL-qa-w8B" eventType="editingDidEnd" id="ABE-d6-MR1"/>
                                     <action selector="next:" destination="bDL-qa-w8B" eventType="editingDidEndOnExit" id="ycM-4N-Vrj"/>
                                 </connections>
@@ -204,9 +205,10 @@
                                 <rect key="frame" x="167" y="237" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <action selector="begin:" destination="bDL-qa-w8B" eventType="editingDidBegin" id="HPw-S5-8LC"/>
+                                    <action selector="changed:" destination="bDL-qa-w8B" eventType="editingChanged" id="3Lm-Zj-3RJ"/>
                                     <action selector="end:" destination="bDL-qa-w8B" eventType="editingDidEnd" id="IYu-ZV-pdT"/>
                                     <action selector="next:" destination="bDL-qa-w8B" eventType="editingDidEndOnExit" id="3KM-mw-1ta"/>
                                 </connections>
@@ -215,9 +217,10 @@
                                 <rect key="frame" x="262" y="237" width="53" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <action selector="begin:" destination="bDL-qa-w8B" eventType="editingDidBegin" id="9XU-MO-hMQ"/>
+                                    <action selector="changed:" destination="bDL-qa-w8B" eventType="editingChanged" id="8fP-7Q-PAy"/>
                                     <action selector="end:" destination="bDL-qa-w8B" eventType="editingDidEnd" id="3Zk-jZ-cZs"/>
                                     <action selector="next:" destination="bDL-qa-w8B" eventType="editingDidEndOnExit" id="Gu5-hg-7FR"/>
                                 </connections>
@@ -240,7 +243,7 @@
                                 <rect key="frame" x="167" y="294" width="148" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <action selector="begin:" destination="bDL-qa-w8B" eventType="editingDidBegin" id="ujS-Xy-M3x"/>
                                     <action selector="confirmation:" destination="bDL-qa-w8B" eventType="editingDidEndOnExit" id="ffA-uH-QK2"/>
@@ -589,7 +592,7 @@
                                 <rect key="frame" x="155" y="122" width="145" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <action selector="begin:" destination="cyM-ec-TWD" eventType="editingDidBegin" id="wOu-11-yQy"/>
                                     <action selector="end:" destination="cyM-ec-TWD" eventType="editingDidEnd" id="1gK-de-qbE"/>
@@ -600,7 +603,7 @@
                                 <rect key="frame" x="155" y="173" width="145" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="begin:" destination="cyM-ec-TWD" eventType="editingDidBegin" id="hpw-bC-10v"/>
                                     <action selector="end:" destination="cyM-ec-TWD" eventType="editingDidEnd" id="70W-2z-I3u"/>
@@ -611,7 +614,7 @@
                                 <rect key="frame" x="155" y="214" width="145" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="begin:" destination="cyM-ec-TWD" eventType="editingDidBegin" id="XQL-vy-d9X"/>
                                     <action selector="done:" destination="cyM-ec-TWD" eventType="editingDidEndOnExit" id="UsP-lX-1SV"/>
@@ -883,6 +886,100 @@
         <image name="first" width="16" height="16"/>
         <image name="second" width="16" height="16"/>
     </resources>
+    <classes>
+        <class className="ViewControllerActualites" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerActualites.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableViewActu" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ViewControllerAfficherProfil" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerAfficherProfil.h"/>
+        </class>
+        <class className="ViewControllerApresPhoto" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerApresPhoto.h"/>
+        </class>
+        <class className="ViewControllerCarteProfil" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerCarteProfil.h"/>
+        </class>
+        <class className="ViewControllerContactsProfil" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerContactsProfil.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableViewContacts" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ViewControllerInformations" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerInformations.h"/>
+            <relationships>
+                <relationship kind="action" name="begin:"/>
+                <relationship kind="action" name="changed:"/>
+                <relationship kind="action" name="confirmation:"/>
+                <relationship kind="action" name="end:"/>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="outlet" name="textAnnee" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textJour" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textMois" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textNom" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textPrenom" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textTel" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="ViewControllerInfosProfil" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerInfosProfil.h"/>
+        </class>
+        <class className="ViewControllerInscription" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerInscription.h"/>
+            <relationships>
+                <relationship kind="action" name="begin:"/>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="end:"/>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="outlet" name="textConfirmation" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textEmail" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textMdp" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="ViewControllerNotifications" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerNotifications.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableViewNotif" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ViewControllerPhotoInscription" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerPhotoInscription.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="down:"/>
+                <relationship kind="action" name="end:"/>
+                <relationship kind="action" name="up2:"/>
+                <relationship kind="action" name="up:"/>
+                <relationship kind="outlet" name="butPrendrePhoto" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="choisir" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="ViewControllerPhotosProfil" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerPhotosProfil.h"/>
+        </class>
+        <class className="ViewControllerRecherche" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerRecherche.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableViewRecherche" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="VueConnexion" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VueConnexion.h"/>
+            <relationships>
+                <relationship kind="action" name="begin:"/>
+                <relationship kind="action" name="confirme:"/>
+                <relationship kind="action" name="end:"/>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="outlet" name="inscription" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="mdpOublie" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="textEmail" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textMdp" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

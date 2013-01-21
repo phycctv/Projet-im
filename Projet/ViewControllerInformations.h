@@ -19,5 +19,6 @@
 - (IBAction)confirmation:(id)sender;
 - (IBAction)begin:(id)sender;
 - (IBAction)end:(id)sender;
+- (IBAction)changed:(id)sender;
 
 @end
