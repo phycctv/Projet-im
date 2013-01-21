@@ -57,6 +57,35 @@
     }
 }
 
+- (IBAction)confirm:(id)sender
+{
+    if (([self.textEmail.text isEqualToString:@""] || textEmail.text ==nil)  ||
+        ([self.textMdp.text isEqualToString:@""] || textMdp.text == nil) ||
+        ([self.textConfirmation.text isEqualToString:@""] && textConfirmation.text == nil)) {
+        UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil
+                                                       message:NSLocalizedString(@"Email ou mot de passe non saisi(s)", @"")
+                                                      delegate:nil
+                                             cancelButtonTitle:NSLocalizedString(@"OK", @"")
+                                             otherButtonTitles:nil
+                             ];
+        [view show];
+        [view release];
+    
+    }
+    else if (![self.textMdp.text isEqualToString:self.textConfirmation.text]) {
+        UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil
+                                                       message:NSLocalizedString(@"Les deux mots de passe doivent être identiques", @"")
+                                                      delegate:nil
+                                             cancelButtonTitle:NSLocalizedString(@"OK", @"")
+                                             otherButtonTitles:nil
+                             ];
+        [view show];
+        [view release];
+    }
+    
+    
+}
+
 - (IBAction)done:(id)sender {
      [sender resignFirstResponder];
 }

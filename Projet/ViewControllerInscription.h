@@ -13,6 +13,7 @@
 @property (unsafe_unretained, nonatomic) IBOutlet UITextField *textMdp;
 @property (unsafe_unretained, nonatomic) IBOutlet UITextField *textConfirmation;
 - (IBAction)next:(id)sender;
+- (IBAction)confirm:(id)sender;
 - (IBAction)done:(id)sender;
 - (IBAction)begin:(id)sender;
 - (IBAction)end:(id)sender;

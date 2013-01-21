@@ -55,11 +55,12 @@
     [textMdp becomeFirstResponder];
 }
 
-- (IBAction) confirme:(id)sender
+- (IBAction)confirm:(id)sender
 {
-    if ([self.textEmail.text isEqualToString:@""]  || [self.textMdp.text isEqualToString:@""] ) {
+    if (([self.textEmail.text isEqualToString:@""] || textEmail.text ==nil)  ||
+        ([self.textMdp.text isEqualToString:@""] || textMdp.text == nil)) {
         UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
-                                                   message:NSLocalizedString(@"email ou mdp non saisi", @"")  
+                                                   message:NSLocalizedString(@"Email ou mot de passe non saisi(s)", @"")  
                                                   delegate:nil 
                                          cancelButtonTitle:NSLocalizedString(@"OK", @"")
                                          otherButtonTitles:nil     

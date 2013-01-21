@@ -14,7 +14,7 @@
 @property (unsafe_unretained, nonatomic) IBOutlet UITextField *textMdp;
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *mdpOublie;
 - (IBAction)next:(id)sender;
-- (IBAction) confirme:(id)sender;
+- (IBAction)confirm:(id)sender;
 - (IBAction)begin:(id)sender;
 - (IBAction)end:(id)sender;
 
