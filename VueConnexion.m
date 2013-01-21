@@ -55,6 +55,8 @@
     [textMdp becomeFirstResponder];
 }
 
+
+
 - (IBAction)confirm:(id)sender
 {
     if (([self.textEmail.text isEqualToString:@""] || textEmail.text ==nil)  ||
@@ -68,10 +70,16 @@
         [view show];
         [view release];
             } else {
-                UIViewController *vc2=[[ViewControllerInscription alloc] init];
-                [self.navigationController pushViewController:vc2 animated:YES];
-                [vc2 release];
-                [sender resignFirstResponder];                    
+                /*premier methode
+                 UIStoryboard *board=[UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil]; 
+                UITabBarController *nextViewController =[board instantiateViewControllerWithIdentifier:@"ok"];
+                [self.navigationController pushViewController:nextViewController animated:YES];
+                 */
+                // 2eme
+                [self performSegueWithIdentifier:@"ohlala" sender:self];
+                [sender resignFirstResponder];
+                //[vc2 release];
+                                    
             }
 
 }
