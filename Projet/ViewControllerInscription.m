@@ -7,6 +7,7 @@
 //
 
 #import "ViewControllerInscription.h"
+#import "ViewControllerInformations.h"
 
 @interface ViewControllerInscription ()
 
