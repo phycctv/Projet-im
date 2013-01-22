@@ -147,21 +147,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Prenom*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FXq-EZ-XSR">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Prénom*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FXq-EZ-XSR">
                                 <rect key="frame" x="20" y="182" width="69" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Date de naissance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fIO-oi-yz9">
-                                <rect key="frame" x="20" y="240" width="144" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Date de naissance*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fIO-oi-yz9">
+                                <rect key="frame" x="20" y="240" width="148" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Telephone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="si5-dR-b8l">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Téléphone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="si5-dR-b8l">
                                 <rect key="frame" x="20" y="294" width="83" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -270,6 +270,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="confirm:" destination="bDL-qa-w8B" eventType="touchDown" id="lIe-XE-VBi"/>
                                     <segue destination="Lsz-T7-EN4" kind="push" id="sbz-e4-dx3"/>
                                 </connections>
                             </button>
@@ -939,6 +940,7 @@
             <relationships>
                 <relationship kind="action" name="begin:"/>
                 <relationship kind="action" name="changed:"/>
+                <relationship kind="action" name="confirm:"/>
                 <relationship kind="action" name="confirmation:"/>
                 <relationship kind="action" name="end:"/>
                 <relationship kind="action" name="next:"/>
@@ -1015,7 +1017,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="F0z-Z9-ven"/>
         <segue reference="YER-3a-gjy"/>
-        <segue reference="tAk-ts-Zsd"/>
+        <segue reference="lQZ-GM-NRu"/>
         <segue reference="zpb-9d-E5R"/>
     </inferredMetricsTieBreakers>
 </document>
