@@ -21,6 +21,12 @@
 @synthesize textAnnee;
 @synthesize textTel;
 
+// identifiants récupérés
+@synthesize email=_email;
+@synthesize password=_password;
+@synthesize confirm=_confirm;
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -34,6 +40,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    NSLog(_email, _password, _confirm);
 }
 
 - (void)didReceiveMemoryWarning
@@ -156,4 +163,18 @@
     }
 
 }
+
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([[segue identifier] isEqualToString:@"segueInformation"])
+    {
+        ViewControllerInscription *vcInscr = [segue destinationViewController];
+        vcInscr.emailConnu = _email;
+        vcInscr.passwordConnu = _email;
+        vcInscr.confirmConnu = _email;
+    }
+    
+}
+
 @end

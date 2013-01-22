@@ -15,6 +15,15 @@
 @property (unsafe_unretained, nonatomic) IBOutlet UITextField *textMois;
 @property (unsafe_unretained, nonatomic) IBOutlet UITextField *textAnnee;
 @property (unsafe_unretained, nonatomic) IBOutlet UITextField *textTel;
+
+
+//pour garder en mémoire les identifiants entrés la vue d'avant
+@property (strong, nonatomic) id email;
+@property (strong, nonatomic) id password;
+@property (strong, nonatomic) id confirm;
+
+
+
 - (IBAction)next:(id)sender;
 - (IBAction)confirm:(id)sender;
 - (IBAction)confirmation:(id)sender;

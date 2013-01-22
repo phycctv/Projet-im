@@ -18,6 +18,11 @@
 @synthesize textMdp;
 @synthesize textConfirmation;
 
+// pour les trucs déjà connus en retour en arrière
+@synthesize emailConnu=_emailConnu;
+@synthesize passwordConnu=_passwordConnu;
+@synthesize confirmConnu=_confirmConnu;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -31,6 +36,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    textEmail.text = _emailConnu;
+    textMdp.text = _passwordConnu;
+    textConfirmation.text = _confirmConnu;
 }
 
 - (void)viewDidUnload
@@ -105,4 +113,16 @@
 - (IBAction)end:(id)sender {
     self.view.center=CGPointMake(self.view.center.x,230);
 }
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([[segue identifier] isEqualToString:@"segueInformation"])
+    {
+        ViewControllerInformations *vcInf = [segue destinationViewController];
+        vcInf.email = textEmail.text;
+        vcInf.password = textMdp.text;
+        vcInf.confirm = textConfirmation.text;
+    }
+}
+
 @end

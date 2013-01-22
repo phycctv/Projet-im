@@ -12,6 +12,12 @@
 @property (unsafe_unretained, nonatomic) IBOutlet UITextField *textEmail;
 @property (unsafe_unretained, nonatomic) IBOutlet UITextField *textMdp;
 @property (unsafe_unretained, nonatomic) IBOutlet UITextField *textConfirmation;
+
+// éléments déjà enregistré (cas du retour en arrière
+@property (strong, nonatomic) id emailConnu;
+@property (strong, nonatomic) id passwordConnu;
+@property (strong, nonatomic) id confirmConnu;
+
 - (IBAction)next:(id)sender;
 - (IBAction)confirm:(id)sender;
 - (IBAction)done:(id)sender;
