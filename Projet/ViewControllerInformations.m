@@ -25,7 +25,13 @@
 @synthesize email=_email;
 @synthesize password=_password;
 @synthesize confirm=_confirm;
-
+// controle intermédiaire obligatoire
+@synthesize nom=_nom;
+@synthesize prenom=_prenom;
+@synthesize jour=_jour;
+@synthesize mois=_mois;
+@synthesize annee=_annee;
+@synthesize tel=_tel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -40,7 +46,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    NSLog(_email, _password, _confirm);
+    textNom.text=_nom;
+    textPrenom.text=_prenom;
+    textJour.text=_jour;
+    textMois.text=_mois;
+    textAnnee.text=_annee;
+    textTel.text=_tel;
 }
 
 - (void)didReceiveMemoryWarning
@@ -167,12 +178,20 @@
 
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([[segue identifier] isEqualToString:@"segueInformation"])
+    if([[segue identifier] isEqualToString:@"segueRetourInscription"])
     {
         ViewControllerInscription *vcInscr = [segue destinationViewController];
         vcInscr.emailConnu = _email;
         vcInscr.passwordConnu = _email;
         vcInscr.confirmConnu = _email;
+        
+        //info de la vue
+        vcInscr.nom = textNom.text;
+        vcInscr.prenom = textPrenom.text;
+        vcInscr.jour = textJour.text;
+        vcInscr.mois = textMois.text;
+        vcInscr.annee = textAnnee.text;
+        vcInscr.tel = textTel.text;
     }
     
 }

@@ -21,6 +21,13 @@
 @property (strong, nonatomic) id email;
 @property (strong, nonatomic) id password;
 @property (strong, nonatomic) id confirm;
+//celle là
+@property (strong, nonatomic) id nom;
+@property (strong, nonatomic) id prenom;
+@property (strong, nonatomic) id jour;
+@property (strong, nonatomic) id mois;
+@property (strong, nonatomic) id annee;
+@property (strong, nonatomic) id tel;
 
 
 

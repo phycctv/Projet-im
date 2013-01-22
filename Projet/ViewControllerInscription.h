@@ -14,9 +14,19 @@
 @property (unsafe_unretained, nonatomic) IBOutlet UITextField *textConfirmation;
 
 // éléments déjà enregistré (cas du retour en arrière
+// pour cette vue
 @property (strong, nonatomic) id emailConnu;
 @property (strong, nonatomic) id passwordConnu;
 @property (strong, nonatomic) id confirmConnu;
+// pour la vue suivante
+@property (strong, nonatomic) id nom;
+@property (strong, nonatomic) id prenom;
+@property (strong, nonatomic) id jour;
+@property (strong, nonatomic) id mois;
+@property (strong, nonatomic) id annee;
+@property (strong, nonatomic) id tel;
+
+
 
 - (IBAction)next:(id)sender;
 - (IBAction)confirm:(id)sender;

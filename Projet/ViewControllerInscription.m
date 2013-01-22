@@ -19,9 +19,17 @@
 @synthesize textConfirmation;
 
 // pour les trucs déjà connus en retour en arrière
+//de cette vue
 @synthesize emailConnu=_emailConnu;
 @synthesize passwordConnu=_passwordConnu;
 @synthesize confirmConnu=_confirmConnu;
+//de la vue suivante
+@synthesize nom=_nom;
+@synthesize prenom=_prenom;
+@synthesize jour=_jour;
+@synthesize mois=_mois;
+@synthesize annee=_annee;
+@synthesize tel=_tel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -116,12 +124,20 @@
 
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([[segue identifier] isEqualToString:@"segueInformation"])
+    if([[segue identifier] isEqualToString:@"segueInformations"])
     {
         ViewControllerInformations *vcInf = [segue destinationViewController];
         vcInf.email = textEmail.text;
         vcInf.password = textMdp.text;
         vcInf.confirm = textConfirmation.text;
+        
+        //info de la vue suivante
+        vcInf.nom = _nom;
+        vcInf.prenom = _nom;
+        vcInf.jour = _jour;
+        vcInf.mois = _mois;
+        vcInf.annee = _annee;
+        vcInf.tel = _tel;
     }
 }
 
