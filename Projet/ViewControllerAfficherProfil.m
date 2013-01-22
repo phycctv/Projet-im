@@ -41,10 +41,12 @@
 
 - (void)dealloc {
     //[_labelTest release];
+    [_labelTest release];
     [super dealloc];
 }
 
 - (void)viewDidUnload {
+    [self setLabelTest:nil];
     [self setLabelTest:nil];
     [super viewDidUnload];
 }

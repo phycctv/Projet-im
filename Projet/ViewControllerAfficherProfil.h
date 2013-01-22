@@ -10,6 +10,7 @@
 
 @interface ViewControllerAfficherProfil : UIViewController
 
+
 @property (retain, nonatomic) IBOutlet UILabel *labelTest;
 @property (strong, nonatomic) id textAAfficher;
 
