@@ -30,7 +30,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    //_labelTest.text = _textAAfficher;
+    _labelTest.text = _textAAfficher;
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,13 +40,11 @@
 }
 
 - (void)dealloc {
-    //[_labelTest release];
     [_labelTest release];
     [super dealloc];
 }
 
 - (void)viewDidUnload {
-    [self setLabelTest:nil];
     [self setLabelTest:nil];
     [super viewDidUnload];
 }
