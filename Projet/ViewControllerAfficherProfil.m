@@ -15,6 +15,7 @@
 @implementation ViewControllerAfficherProfil
 
 @synthesize textAAfficher=_textAAfficher;
+@synthesize labelTest=_labelTest;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
