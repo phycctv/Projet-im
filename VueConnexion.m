@@ -70,19 +70,41 @@
         [view show];
         [view release];
             } else {
-                if (1) {
+                NSString *strURL = [NSString stringWithFormat:@"http://email=%@&mdp=%@",self.textEmail.text,self.textMdp.text];
+                NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
+                NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
+                if ([strResult isEqualToString:@"1"]) {
+                    UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
+                                                                   message:NSLocalizedString(@"reussi", @"")  
+                                                                  delegate:nil 
+                                                         cancelButtonTitle:NSLocalizedString(@"OK", @"")
+                                                         otherButtonTitles:nil   
+                                         ];
+                    [view show];
+                    [view release];
+                    [self performSegueWithIdentifier:@"ohlala" sender:self];
+                    [sender resignFirstResponder];
                     
+                } else {
+                    /*premier methode
+                     UIStoryboard *board=[UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil]; 
+                     UITabBarController *nextViewController =[board instantiateViewControllerWithIdentifier:@"ok"];
+                     [self.navigationController pushViewController:nextViewController animated:YES];
+                     */
+                    // 2eme
+                    UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
+                                                                   message:NSLocalizedString(@"n'a pas reussi", @"")  
+                                                                  delegate:nil 
+                                                         cancelButtonTitle:NSLocalizedString(@"OK", @"")
+                                                         otherButtonTitles:nil   
+                                         ];
+                    [view show];
+                    [view release];
+                    [self performSegueWithIdentifier:@"ohlala" sender:self];
+                    [sender resignFirstResponder];
+                    //[vc2 release];
                 }
-                /*premier methode
-                 UIStoryboard *board=[UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil]; 
-                UITabBarController *nextViewController =[board instantiateViewControllerWithIdentifier:@"ok"];
-                [self.navigationController pushViewController:nextViewController animated:YES];
-                 */
-                // 2eme
-                
-                [self performSegueWithIdentifier:@"ohlala" sender:self];
-                [sender resignFirstResponder];
-                //[vc2 release];
+
                                     
             }
 
