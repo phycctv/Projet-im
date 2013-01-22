@@ -16,6 +16,7 @@
 @property (unsafe_unretained, nonatomic) IBOutlet UITextField *textAnnee;
 @property (unsafe_unretained, nonatomic) IBOutlet UITextField *textTel;
 - (IBAction)next:(id)sender;
+- (IBAction)confirm:(id)sender;
 - (IBAction)confirmation:(id)sender;
 - (IBAction)begin:(id)sender;
 - (IBAction)end:(id)sender;

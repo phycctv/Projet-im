@@ -74,6 +74,42 @@
     }
 }
 
+- (IBAction)confirm:(id)sender
+{
+    if (([self.textNom.text isEqualToString:@""] || textNom.text ==nil)  ||
+        ([self.textPrenom.text isEqualToString:@""] || textPrenom.text == nil) ||
+        ([self.textJour.text isEqualToString:@""] || textJour.text == nil) ||
+        ([self.textMois.text isEqualToString:@""] || textMois.text == nil) ||
+        ([self.textAnnee.text isEqualToString:@""] || textAnnee.text == nil)) {
+        UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil
+                                                       message:NSLocalizedString(@"Nom, prénom et date obligatoires", @"")
+                                                      delegate:nil
+                                             cancelButtonTitle:NSLocalizedString(@"OK", @"")
+                                             otherButtonTitles:nil
+                             ];
+        [view show];
+        [view release]; 
+    } else if ([self.textAnnee.text length]<=3){
+        UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil
+                                                       message:NSLocalizedString(@"Mauvais format d'année (ex : 1999)", @"")
+                                                      delegate:nil
+                                             cancelButtonTitle:NSLocalizedString(@"OK", @"")
+                                             otherButtonTitles:nil
+                             ];
+        [view show];
+        [view release];
+    } else if ([textTel.text length]!=0 && [textTel.text length]!=10){
+        UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil
+                                                       message:NSLocalizedString(@"Le téléphone doit être composé de 10 chiffres", @"")
+                                                      delegate:nil
+                                             cancelButtonTitle:NSLocalizedString(@"OK", @"")
+                                             otherButtonTitles:nil
+                             ];
+        [view show];
+        [view release];
+    }
+}
+
 - (IBAction)confirmation:(id)sender {
     [sender resignFirstResponder];
 }
