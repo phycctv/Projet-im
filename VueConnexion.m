@@ -100,6 +100,10 @@
     self.view.center=CGPointMake(self.view.center.x,230);
 }
 
+- (IBAction)mdpOublie:(id)sender {
+      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.google.fr/search?q=what's+my+password%3F&ie=UTF-8&oe=UTF-8&hl=en"]];
+}
+
 
 
 @end

@@ -17,5 +17,6 @@
 - (IBAction)confirm:(id)sender;
 - (IBAction)begin:(id)sender;
 - (IBAction)end:(id)sender;
+- (IBAction)mdpOublie:(id)sender;
 
 @end
