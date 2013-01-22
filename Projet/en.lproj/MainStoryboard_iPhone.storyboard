@@ -718,7 +718,7 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="myIdentifier" id="TEf-TB-SWR">
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyIdentifier" id="TEf-TB-SWR">
                                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -783,7 +783,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Retour" id="Vc5-jZ-OeS"/>
+                                    <barButtonItem title="Retour" id="Vc5-jZ-OeS">
+                                        <connections>
+                                            <segue destination="4" kind="custom" customClass="StoryboardSegueCustomLeftToRight" id="d73-DT-pei"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
@@ -1011,5 +1015,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="F0z-Z9-ven"/>
         <segue reference="lQZ-GM-NRu"/>
+        <segue reference="d73-DT-pei"/>
     </inferredMetricsTieBreakers>
 </document>
