@@ -70,12 +70,16 @@
         [view show];
         [view release];
             } else {
+                if (1) {
+                    
+                }
                 /*premier methode
                  UIStoryboard *board=[UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil]; 
                 UITabBarController *nextViewController =[board instantiateViewControllerWithIdentifier:@"ok"];
                 [self.navigationController pushViewController:nextViewController animated:YES];
                  */
                 // 2eme
+                
                 [self performSegueWithIdentifier:@"ohlala" sender:self];
                 [sender resignFirstResponder];
                 //[vc2 release];
