@@ -99,6 +99,7 @@
         [view show];
         [view release];
     } else {
+        
         NSString *strURL = [NSString stringWithFormat:@"http://projects.eyesnap.fr/project05/appli/confirmationI1.php?ident=%@&mdp=%@",self.textEmail.text,self.textMdp.text];
         NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
         NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
@@ -110,10 +111,30 @@
             [self performSegueWithIdentifier:@"segueInformations" sender:self];
             [sender resignFirstResponder];
             
-        } else {
+        } else if([strResult   isEqualToString:@"0"]) {
             NSString *email = [textEmail.text stringByAppendingFormat: @" est deja pris"];
             UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
                                                            message:NSLocalizedString(email, @"")  
+                                                          delegate:nil 
+                                                 cancelButtonTitle:NSLocalizedString(@"OK", @"")
+                                                 otherButtonTitles:nil   
+                                 ];
+            [view show];
+            [view release];
+        } else if([strResult   isEqualToString:@""]){
+            //NSString *erreur = [textEmail.text stringByAppendingFormat: @" est deja pris"];
+            UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
+                                                           message:NSLocalizedString(@"Vous n'avez pas d'Internet.", @"")  
+                                                          delegate:nil 
+                                                 cancelButtonTitle:NSLocalizedString(@"OK", @"")
+                                                 otherButtonTitles:nil   
+                                 ];
+            [view show];
+            [view release];
+
+        } else {
+            UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
+                                                           message:NSLocalizedString(@"Une erreur s'est produite,verifiez votre connection,SVP.", @"")  
                                                           delegate:nil 
                                                  cancelButtonTitle:NSLocalizedString(@"OK", @"")
                                                  otherButtonTitles:nil   
