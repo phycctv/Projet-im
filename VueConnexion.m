@@ -70,14 +70,18 @@
         [view show];
         [view release];
             } else {
-                NSString *strURL = [NSString stringWithFormat:@"http://email=%@&mdp=%@",self.textEmail.text,self.textMdp.text];
+                NSString *strURL = [NSString stringWithFormat:@"http://www-etu-info.iut2.upmf-grenoble.fr/~zhangxi/confirmationL.php?ident=%@&mdp=%@",self.textEmail.text,self.textMdp.text];
                 NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
                 NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
-                if ([strResult isEqualToString:@"1"]) {
+                strResult = [strResult stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+                //NSLog(@"%@",strResult);
+                //strResult = [strResult stringByAppendingFormat: @"]"];
+                //strResult = [@"[" stringByAppendingFormat:strResult];
+                if ([strResult   isEqualToString:@"1"]) {
                     UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
                                                                    message:NSLocalizedString(@"reussi", @"")  
                                                                   delegate:nil 
-                                                         cancelButtonTitle:NSLocalizedString(@"OK", @"")
+                                                         cancelButtonTitle:NSLocalizedString( strResult, @"")
                                                          otherButtonTitles:nil   
                                          ];
                     [view show];
@@ -95,13 +99,14 @@
                     UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
                                                                    message:NSLocalizedString(@"n'a pas reussi", @"")  
                                                                   delegate:nil 
-                                                         cancelButtonTitle:NSLocalizedString(@"OK", @"")
+                                                         cancelButtonTitle:NSLocalizedString(strResult, @"")
                                                          otherButtonTitles:nil   
                                          ];
                     [view show];
                     [view release];
-                    [self performSegueWithIdentifier:@"ohlala" sender:self];
-                    [sender resignFirstResponder];
+                    [textEmail setText:strResult];
+                    //[self performSegueWithIdentifier:@"ohlala" sender:self];
+                    //[sender resignFirstResponder];
                     //[vc2 release];
                 }
 
