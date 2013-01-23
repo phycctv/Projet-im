@@ -102,13 +102,7 @@ UIImage *image;
     [choisir release];
     [super dealloc];
 }
-- (IBAction)up2:(id)sender {
-    UIActionSheet *actionSheet;
-    actionSheet=[[UIActionSheet alloc]initWithTitle:@"Photo de Profil" delegate:self cancelButtonTitle:@"Annuler" destructiveButtonTitle:nil otherButtonTitles:@"Choisir dans Bibliotheque", nil];
-    
-    [actionSheet showInView:self.view];
 
-}
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
 	NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
 	if ([mediaType isEqualToString:@"public.image"]){

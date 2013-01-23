@@ -78,10 +78,11 @@
                 //strResult = [strResult stringByAppendingFormat: @"]"];
                 //strResult = [@"[" stringByAppendingFormat:strResult];
                 if ([strResult   isEqualToString:@"1"]) {
+                    NSString *bienvenu = [@"Bienvenu! " stringByAppendingFormat: textEmail.text];
                     UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
-                                                                   message:NSLocalizedString(@"reussi", @"")  
+                                                                   message:NSLocalizedString(bienvenu, @"")  
                                                                   delegate:nil 
-                                                         cancelButtonTitle:NSLocalizedString( strResult, @"")
+                                                         cancelButtonTitle:NSLocalizedString( @"OK", @"")
                                                          otherButtonTitles:nil   
                                          ];
                     [view show];
@@ -99,7 +100,7 @@
                     UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
                                                                    message:NSLocalizedString(@"n'a pas reussi", @"")  
                                                                   delegate:nil 
-                                                         cancelButtonTitle:NSLocalizedString(strResult, @"")
+                                                         cancelButtonTitle:NSLocalizedString(@"OK", @"")
                                                          otherButtonTitles:nil   
                                          ];
                     [view show];

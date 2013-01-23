@@ -15,6 +15,6 @@
 - (IBAction)end:(id)sender;
 - (IBAction)up:(id)sender;
 @property (retain, nonatomic) IBOutlet UIButton *choisir;
-- (IBAction)up2:(id)sender;
+
 
 @end
