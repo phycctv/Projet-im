@@ -31,7 +31,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="e-Mail :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="War-TM-Z3U">
-                                <rect key="frame" x="71" y="246" width="56" height="21"/>
+                                <rect key="frame" x="58" y="246" width="74" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -49,7 +49,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mot de passe :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NhM-jj-eF7">
-                                <rect key="frame" x="20" y="306" width="112" height="21"/>
+                                <rect key="frame" x="3" y="306" width="124" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -67,7 +67,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="mdpOublie:" destination="dtM-ZW-tIj" eventType="touchDragInside" id="ErR-DV-BsB"/>
+                                    <action selector="mdpOublie:" destination="dtM-ZW-tIj" eventType="touchUpInside" id="dNO-XR-pTj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="E3w-Uv-8OC">
@@ -1013,8 +1013,8 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="tAk-ts-Zsd"/>
         <segue reference="F0z-Z9-ven"/>
-        <segue reference="lQZ-GM-NRu"/>
-        <segue reference="d73-DT-pei"/>
+        <segue reference="zqw-BW-GGG"/>
     </inferredMetricsTieBreakers>
 </document>
