@@ -70,7 +70,7 @@
         [view show];
         [view release];
             } else {
-                NSString *strURL = [NSString stringWithFormat:@"http://www-etu-info.iut2.upmf-grenoble.fr/~zhangxi/confirmationL.php?ident=%@&mdp=%@",self.textEmail.text,self.textMdp.text];
+                NSString *strURL = [NSString stringWithFormat:@"http://projects.eyesnap.fr/project05/appli/confirmationL.php?ident=%@&mdp=%@",self.textEmail.text,self.textMdp.text];
                 NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
                 NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
                 strResult = [strResult stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
