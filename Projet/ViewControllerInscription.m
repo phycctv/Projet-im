@@ -98,6 +98,30 @@
                              ];
         [view show];
         [view release];
+    } else {
+        NSString *strURL = [NSString stringWithFormat:@"http://www-etu-info.iut2.upmf-grenoble.fr/~zhangxi/confirmationI1.php?ident=%@&mdp=%@",self.textEmail.text,self.textMdp.text];
+        NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
+        NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
+        strResult = [strResult stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        //NSLog(@"%@",strResult);
+        //strResult = [strResult stringByAppendingFormat: @"]"];
+        //strResult = [@"[" stringByAppendingFormat:strResult];
+        if ([strResult   isEqualToString:@"1"]) {
+            [self performSegueWithIdentifier:@"segueInformations" sender:self];
+            [sender resignFirstResponder];
+            
+        } else {
+            NSString *email = [textEmail.text stringByAppendingFormat: @" est deja pris"];
+            UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
+                                                           message:NSLocalizedString(email, @"")  
+                                                          delegate:nil 
+                                                 cancelButtonTitle:NSLocalizedString(@"OK", @"")
+                                                 otherButtonTitles:nil   
+                                 ];
+            [view show];
+            [view release];
+        }
+        
     }
     
     

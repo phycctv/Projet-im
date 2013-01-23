@@ -126,7 +126,42 @@
                              ];
         [view show];
         [view release];
+    } else {
+        NSString *strURL = [NSString stringWithFormat:@"http://www-etu-info.iut2.upmf-grenoble.fr/~zhangxi/confirmationI2.php?ident=%@&mdp=%@&nom=%@&prenom=%@&jour=%@&mois=%@&annee=%@&tel=%@",_email,_password,textNom.text,textPrenom.text,textJour.text,textMois.text,textAnnee.text,textTel.text];
+        NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
+        NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
+        strResult = [strResult stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        //NSLog(@"%@",strResult);
+        //strResult = [strResult stringByAppendingFormat: @"]"];
+        //strResult = [@"[" stringByAppendingFormat:strResult];
+        if ([strResult   isEqualToString:@"1"]) {
+            NSString *email = [_email stringByAppendingFormat: @" est bien cree"];
+            UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
+                                                           message:NSLocalizedString(email, @"")  
+                                                          delegate:nil 
+                                                 cancelButtonTitle:NSLocalizedString(@"OK", @"")
+                                                 otherButtonTitles:nil   
+                                 ];
+            [view show];
+            [view release];
+            [self performSegueWithIdentifier:@"seguePhotoProfil" sender:self];
+            [sender resignFirstResponder];
+            
+        } else {
+            //NSString *email = [textEmail.text stringByAppendingFormat: @" est deja pris"];
+            UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
+                                                           message:NSLocalizedString(@"une erreur s'est produite!!!", @"")  
+                                                          delegate:nil 
+                                                 cancelButtonTitle:NSLocalizedString(@"OK", @"")
+                                                 otherButtonTitles:nil   
+                                 ];
+            [view show];
+            [view release];
+
+        }
+        
     }
+
 }
 
 - (IBAction)confirmation:(id)sender {
@@ -182,8 +217,8 @@
     {
         ViewControllerInscription *vcInscr = [segue destinationViewController];
         vcInscr.emailConnu = _email;
-        vcInscr.passwordConnu = _email;
-        vcInscr.confirmConnu = _email;
+        vcInscr.passwordConnu = _password;
+        vcInscr.confirmConnu = _confirm;
         
         //info de la vue
         vcInscr.nom = textNom.text;
