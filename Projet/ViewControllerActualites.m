@@ -27,10 +27,30 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    // récuperer un tableau de 10 lignes contenant un type structuré : un idphotoprofil, un lienphotoprofil, un nom profil, un id photo, un lien photo, un nom photo, un commentaire (peut être vide), une date
-    // convertir ça en type objective-C
-    // ça peut être un tableau à deux dimension : [10][8] qui récupère une chaine utf8 et la convertir. La chaine est découpée selon un caractère précis. ça semble simple.
-    // le mettre dans tableViewDataSource
+    
+    // récuperer une chaine contenant 10 fois : un idphotoprofil, un lienphotoprofil, un nom profil, un prenom profil, un id photo, un lien photo, un nom photo, un commentaire (peut être vide), une date
+    // convertir ça en tableau à deux dimension : [10][8] qui récupère une chaine utf8 et la convertir. La chaine est découpée selon un caractère précis. ça semble simple.
+    // le mettre dans tableViewDataSource au final
+    
+//    NSString *strURL = [NSString stringWithFormat:@"http://eyesnap.fr/project05/appli/actualites.php?idcompte=%@",self.textEmail.text];
+//    NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
+//    NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
+//    if ([strResult isEqualToString:@""]) {
+//        tableViewDataSource = [[NSArray alloc] initWithObjects:@"Il n'y a pas d'actualités disponibles.", nil];
+//    }
+//
+//    else
+//    {
+//        NSArray *tableRecup;
+//        NSMutableArray *tableRecupInter;
+//        tableRecup = [strResult componentsSeparatedByString:@"##"];
+//        for (NSInteger i=0; i < [tableRecup count]; i++) {
+//            [tableRecupInter addObject:[tableRecup[i] componentsSeparatedByString:@"::"]];
+//        }
+//        tableViewDataSource = tableRecupInter;        
+//    }
+
+    
     tableViewDataSource = [[NSArray alloc] initWithObjects:@"Item 1", @"Item 2", @"Item 3", nil];
 }
 
@@ -52,12 +72,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    // un idphotoprofil, un lienphotoprofil, un nom profil, un id photo, un lien photo, un nom photo, un commentaire (peut être vide), une date
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
+    
+//    NSArray *tableTemp = [tableViewDataSource objectAtIndex:[indexPath row]];
+//    NSString *stringTemp = tableTemp[2];
+//    NSString *titleText = [stringTemp stringByAppendingString:[tableTemp[3]]];
     
     NSString *titleText = [tableViewDataSource objectAtIndex:[indexPath row]];
     

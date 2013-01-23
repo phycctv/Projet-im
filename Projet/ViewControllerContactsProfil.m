@@ -28,9 +28,29 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    // recupere un tableau de type structuré qui contient : un idProfil, un nom profil
-    // convertir ça en type objective-C
-    // ça peut être un tableau à deux dimension : [x][2] qui récupère une chaine et la convertir. La chaine est découpée selon un caractère précis. ça semble simple.
+    
+    // recupere une chaine qui contient fois x : un idProfil, un nom profil
+    // convertir ça en tableau à deux dimension : [x][2] qui récupère une chaine et la convertir. La chaine est découpée selon un caractère précis. ça semble simple.
+    
+    //    NSString *strURL = [NSString stringWithFormat:@"http://eyesnap.fr/project05/appli/getContacts.php?idCompte=%@",self.textEmail.text];
+    //    NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
+    //    NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
+    //    if ([strResult isEqualToString:@""]) {
+    //        tableViewDataSource = [[NSArray alloc] initWithObjects:@"Vous n'avez pas de contacts.", nil];
+    //    }
+    //
+    //    else
+    //    {
+    //        NSArray *tableRecup;
+    //        NSMutableArray *tableRecupInter;
+    //        tableRecup = [strResult componentsSeparatedByString:@"##"];
+    //        for (NSInteger i=0; i < [tableRecup count]; i++) {
+    //            [tableRecupInter addObject:[tableRecup[i] componentsSeparatedByString:@"::"]];
+    //        }
+    //        tableViewDataSource = tableRecupInter;
+    //    }
+    
+    
     tableViewDataSource = [[NSArray alloc] initWithObjects:@"Item 1", @"Item 2", @"Item 3", nil];
 }
 
@@ -68,10 +88,15 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    TContact *cont = [tableViewDataSource objectAtIndex:[indexPath row]];
+//    NSArray *tableTemp = [tableViewDataSource objectAtIndex:[indexPath row]]
+//    NSString *cont = tableTemp[0];
+    NSString *cont = [tableViewDataSource objectAtIndex:[indexPath row]];
 //    NSString *idProfil = cont->idProfil;
 
-   [self performSegueWithIdentifier:@"segueConsultProfil" sender:self];
+    if (cont!=@"Vous n'avez pas de contacts.")
+    {
+        [self performSegueWithIdentifier:@"segueConsultProfil" sender:self];
+    }
 }
 
 
