@@ -104,7 +104,7 @@
                                          ];
                     [view show];
                     [view release];
-                    [textEmail setText:strResult];
+                    //[textEmail setText:strResult];
                     //[self performSegueWithIdentifier:@"ohlala" sender:self];
                     //[sender resignFirstResponder];
                     //[vc2 release];
