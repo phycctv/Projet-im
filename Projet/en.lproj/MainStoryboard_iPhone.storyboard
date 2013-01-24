@@ -404,7 +404,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Prendre une photo" width="202" id="xyr-Ut-0AM"/>
-                                    <barButtonItem title="Déconnexion" id="ivq-33-92M"/>
+                                    <barButtonItem title="Déconnexion" id="ivq-33-92M">
+                                        <connections>
+                                            <segue destination="dtM-ZW-tIj" kind="custom" customClass="StoryboardSegueCustomLeftToRight" id="SZJ-pN-ntH"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
@@ -998,7 +1002,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="tAk-ts-Zsd"/>
-        <segue reference="F0z-Z9-ven"/>
+        <segue reference="SZJ-pN-ntH"/>
         <segue reference="zqw-BW-GGG"/>
     </inferredMetricsTieBreakers>
 </document>
