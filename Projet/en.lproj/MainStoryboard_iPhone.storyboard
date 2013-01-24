@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--Vue Connexion-->
+        <!--Vue Connexion - Connexion-->
         <scene sceneID="b7t-g0-T3r">
             <objects>
-                <viewController id="dtM-ZW-tIj" customClass="VueConnexion" sceneMemberID="viewController">
+                <viewController title="Connexion" id="dtM-ZW-tIj" customClass="VueConnexion" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Szc-qK-d2u">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
