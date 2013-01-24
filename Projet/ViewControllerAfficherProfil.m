@@ -15,6 +15,12 @@
 @implementation ViewControllerAfficherProfil
 
 @synthesize textAAfficher=_textAAfficher;
+@synthesize lab1=_lab1;
+@synthesize lab2=_lab2;
+@synthesize lab3=_lab3;
+@synthesize lab4=_lab4;
+@synthesize lab5=_lab5;
+@synthesize lab6=_lab6;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

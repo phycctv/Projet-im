@@ -20,6 +20,9 @@
 		75ADBF7516A883FF00939381 /* ViewControllerCarteProfil.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ADBF7416A883FE00939381 /* ViewControllerCarteProfil.m */; };
 		CD93CD07168C883E0038D8F7 /* VueConnexion.m in Sources */ = {isa = PBXBuildFile; fileRef = CD93CD06168C883E0038D8F7 /* VueConnexion.m */; };
 		CD93CD18168C9A160038D8F7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CD93CD17168C9A160038D8F7 /* Default.png */; };
+		CDBADACB16B1DEE00010E4EF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBADACA16B1DEE00010E4EF /* Default@2x.png */; };
+		CDBADACF16B1E11B0010E4EF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBADACD16B1E11A0010E4EF /* Icon.png */; };
+		CDCA7CFA16B1E43F002ED0C6 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCA7CF816B1E43F002ED0C6 /* Icon@2x.png */; };
 		CDCB1F1816AACA10000AFB97 /* ViewControllerInscription.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB1F1716AACA10000AFB97 /* ViewControllerInscription.m */; };
 		CDCE2C581684AB0F00FFAEE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCE2C571684AB0F00FFAEE5 /* UIKit.framework */; };
 		CDCE2C5A1684AB0F00FFAEE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCE2C591684AB0F00FFAEE5 /* Foundation.framework */; };
@@ -77,6 +80,9 @@
 		CD93CD05168C883E0038D8F7 /* VueConnexion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VueConnexion.h; path = ../VueConnexion.h; sourceTree = "<group>"; };
 		CD93CD06168C883E0038D8F7 /* VueConnexion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VueConnexion.m; path = ../VueConnexion.m; sourceTree = "<group>"; };
 		CD93CD17168C9A160038D8F7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CDBADACA16B1DEE00010E4EF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CDBADACE16B1E11B0010E4EF /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/Icon.png; sourceTree = "<group>"; };
+		CDCA7CF916B1E43F002ED0C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/Icon@2x.png"; sourceTree = "<group>"; };
 		CDCB1F1616AACA10000AFB97 /* ViewControllerInscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerInscription.h; sourceTree = "<group>"; };
 		CDCB1F1716AACA10000AFB97 /* ViewControllerInscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerInscription.m; sourceTree = "<group>"; };
 		CDCE2C531684AB0F00FFAEE5 /* Projet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Projet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +149,7 @@
 		CDCE2C481684AB0F00FFAEE5 = {
 			isa = PBXGroup;
 			children = (
+				CDBADACA16B1DEE00010E4EF /* Default@2x.png */,
 				CDCE2C5D1684AB0F00FFAEE5 /* Projet */,
 				CDCE2C891684AB0F00FFAEE5 /* ProjetTests */,
 				CDCE2C561684AB0F00FFAEE5 /* Frameworks */,
@@ -219,6 +226,8 @@
 		CDCE2C5E1684AB0F00FFAEE5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CDBADACD16B1E11A0010E4EF /* Icon.png */,
+				CDCA7CF816B1E43F002ED0C6 /* Icon@2x.png */,
 				CDCE2C5F1684AB0F00FFAEE5 /* Projet-Info.plist */,
 				CDCE2C601684AB0F00FFAEE5 /* InfoPlist.strings */,
 				CDCE2C631684AB0F00FFAEE5 /* main.m */,
@@ -324,6 +333,9 @@
 				CDCE2C7A1684AB0F00FFAEE5 /* second.png in Resources */,
 				CDCE2C7C1684AB0F00FFAEE5 /* second@2x.png in Resources */,
 				CD93CD18168C9A160038D8F7 /* Default.png in Resources */,
+				CDBADACB16B1DEE00010E4EF /* Default@2x.png in Resources */,
+				CDBADACF16B1E11B0010E4EF /* Icon.png in Resources */,
+				CDCA7CFA16B1E43F002ED0C6 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +408,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CDBADACD16B1E11A0010E4EF /* Icon.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDBADACE16B1E11B0010E4EF /* en */,
+			);
+			name = Icon.png;
+			sourceTree = "<group>";
+		};
+		CDCA7CF816B1E43F002ED0C6 /* Icon@2x.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDCA7CF916B1E43F002ED0C6 /* en */,
+			);
+			name = "Icon@2x.png";
+			sourceTree = "<group>";
+		};
 		CDCE2C601684AB0F00FFAEE5 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
