@@ -70,7 +70,7 @@
         [view show];
         [view release];
             } else {
-                NSString *strURL = [NSString stringWithFormat:@"http://projects.eyesnap.fr/project05/appli/confirmationL.php?ident=%@&mdp=%@",self.textEmail.text,self.textMdp.text];
+                NSString *strURL = [NSString stringWithFormat:@"http://projects.eyesnap.fr/project05/appli/session.php?ident=%@&mdp=%@",self.textEmail.text,self.textMdp.text];
                 NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
                 NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
                 strResult = [strResult stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -98,7 +98,7 @@
                      */
                     // 2eme
                     UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
-                                                                   message:NSLocalizedString(@"Email ou mot de passe incorrect(s).Ò", @"")  
+                                                                   message:NSLocalizedString(@"Email ou mot de passe incorrect(s).", @"")  
                                                                   delegate:nil 
                                                          cancelButtonTitle:NSLocalizedString(@"OK", @"")
                                                          otherButtonTitles:nil   
