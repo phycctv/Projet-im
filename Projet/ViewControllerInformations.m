@@ -101,7 +101,7 @@
         ([self.textMois.text isEqualToString:@""] || textMois.text == nil) ||
         ([self.textAnnee.text isEqualToString:@""] || textAnnee.text == nil)) {
         UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil
-                                                       message:NSLocalizedString(@"Nom, prénom et date obligatoires", @"")
+                                                       message:NSLocalizedString(@"Nom, prénom et date obligatoires.", @"")
                                                       delegate:nil
                                              cancelButtonTitle:NSLocalizedString(@"OK", @"")
                                              otherButtonTitles:nil
@@ -110,7 +110,7 @@
         [view release]; 
     } else if ([self.textAnnee.text length]<=3){
         UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil
-                                                       message:NSLocalizedString(@"Mauvais format d'année (ex : 1999)", @"")
+                                                       message:NSLocalizedString(@"Mauvais format d'année (ex : 1999).", @"")
                                                       delegate:nil
                                              cancelButtonTitle:NSLocalizedString(@"OK", @"")
                                              otherButtonTitles:nil
@@ -119,7 +119,7 @@
         [view release];
     } else if ([textTel.text length]!=0 && [textTel.text length]!=10){
         UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil
-                                                       message:NSLocalizedString(@"Le téléphone doit être composé de 10 chiffres", @"")
+                                                       message:NSLocalizedString(@"Le téléphone doit être composé de 10 chiffres.", @"")
                                                       delegate:nil
                                              cancelButtonTitle:NSLocalizedString(@"OK", @"")
                                              otherButtonTitles:nil
@@ -135,7 +135,7 @@
         //strResult = [strResult stringByAppendingFormat: @"]"];
         //strResult = [@"[" stringByAppendingFormat:strResult];
         if ([strResult   isEqualToString:@"1"]) {
-            NSString *email = [_email stringByAppendingFormat: @" est bien cree"];
+            NSString *email = [_email stringByAppendingFormat: @" a bien été créé."];
             UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
                                                            message:NSLocalizedString(email, @"")  
                                                           delegate:nil 
@@ -148,9 +148,9 @@
             [sender resignFirstResponder];
             
         } else {
-            //NSString *email = [textEmail.text stringByAppendingFormat: @" est deja pris"];
+            //NSString *email = [textEmail.text stringByAppendingFormat: @" est déjà utlisé"];
             UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
-                                                           message:NSLocalizedString(@"une erreur s'est produite!!!", @"")  
+                                                           message:NSLocalizedString(@"Une erreur s'est produite !", @"")  
                                                           delegate:nil 
                                                  cancelButtonTitle:NSLocalizedString(@"OK", @"")
                                                  otherButtonTitles:nil   

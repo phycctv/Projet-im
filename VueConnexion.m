@@ -62,7 +62,7 @@
     if (([self.textEmail.text isEqualToString:@""] || textEmail.text ==nil)  ||
         ([self.textMdp.text isEqualToString:@""] || textMdp.text == nil)) {
         UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
-                                                   message:NSLocalizedString(@"Email ou mot de passe non saisi(s)", @"")  
+                                                   message:NSLocalizedString(@"Email ou mot de passe non saisi(s).", @"")  
                                                   delegate:nil 
                                          cancelButtonTitle:NSLocalizedString(@"OK", @"")
                                          otherButtonTitles:nil     
@@ -78,7 +78,7 @@
                 //strResult = [strResult stringByAppendingFormat: @"]"];
                 //strResult = [@"[" stringByAppendingFormat:strResult];
                 if ([strResult   isEqualToString:@"1"]) {
-                    NSString *bienvenu = [@"Bienvenu! " stringByAppendingFormat: textEmail.text];
+                    NSString *bienvenu = [@"Bienvenue ! " stringByAppendingFormat: textEmail.text];
                     UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
                                                                    message:NSLocalizedString(bienvenu, @"")  
                                                                   delegate:nil 
@@ -98,7 +98,7 @@
                      */
                     // 2eme
                     UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
-                                                                   message:NSLocalizedString(@"n'a pas reussi", @"")  
+                                                                   message:NSLocalizedString(@"Email ou mot de passe incorrect(s).Ò", @"")  
                                                                   delegate:nil 
                                                          cancelButtonTitle:NSLocalizedString(@"OK", @"")
                                                          otherButtonTitles:nil   

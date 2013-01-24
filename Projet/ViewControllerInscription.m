@@ -80,7 +80,7 @@
         ([self.textMdp.text isEqualToString:@""] || textMdp.text == nil) ||
         ([self.textConfirmation.text isEqualToString:@""] && textConfirmation.text == nil)) {
         UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil
-                                                       message:NSLocalizedString(@"Email ou mot de passe non saisi(s)", @"")
+                                                       message:NSLocalizedString(@"Email ou mot de passe non saisi(s).", @"")
                                                       delegate:nil
                                              cancelButtonTitle:NSLocalizedString(@"OK", @"")
                                              otherButtonTitles:nil
@@ -91,7 +91,7 @@
     }
     else if (![self.textMdp.text isEqualToString:self.textConfirmation.text]) {
         UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil
-                                                       message:NSLocalizedString(@"Les deux mots de passe doivent être identiques", @"")
+                                                       message:NSLocalizedString(@"Les deux mots de passe doivent être identiques.", @"")
                                                       delegate:nil
                                              cancelButtonTitle:NSLocalizedString(@"OK", @"")
                                              otherButtonTitles:nil
@@ -112,7 +112,7 @@
             [sender resignFirstResponder];
             
         } else if([strResult   isEqualToString:@"0"]) {
-            NSString *email = [textEmail.text stringByAppendingFormat: @" est deja pris"];
+            NSString *email = [textEmail.text stringByAppendingFormat: @" est déjà utilisé."];
             UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
                                                            message:NSLocalizedString(email, @"")  
                                                           delegate:nil 
@@ -122,9 +122,9 @@
             [view show];
             [view release];
         } else if([strResult   isEqualToString:@""]){
-            //NSString *erreur = [textEmail.text stringByAppendingFormat: @" est deja pris"];
+            //NSString *erreur = [textEmail.text stringByAppendingFormat: @" est déjà utilisé"];
             UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
-                                                           message:NSLocalizedString(@"Vous n'avez pas d'Internet.", @"")  
+                                                           message:NSLocalizedString(@"Vous n'avez pas accès à Internet.", @"")  
                                                           delegate:nil 
                                                  cancelButtonTitle:NSLocalizedString(@"OK", @"")
                                                  otherButtonTitles:nil   
@@ -134,7 +134,7 @@
 
         } else {
             UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil 
-                                                           message:NSLocalizedString(@"Une erreur s'est produite,verifiez votre connection,SVP.", @"")  
+                                                           message:NSLocalizedString(@"Une erreur s'est produite, vérifiez votre connexion.", @"")  
                                                           delegate:nil 
                                                  cancelButtonTitle:NSLocalizedString(@"OK", @"")
                                                  otherButtonTitles:nil   
