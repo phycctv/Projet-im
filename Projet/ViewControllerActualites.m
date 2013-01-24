@@ -119,6 +119,7 @@
     return cell;
 }
 
+
 //-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 //{
 //  le code ressemblera probablement à ça pour accéder au machin sélectionné.

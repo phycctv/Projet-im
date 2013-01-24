@@ -32,6 +32,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+        NSString *strURL = [NSString stringWithFormat:@"http://projects.eyesnap.fr/project05/appli/deconnexion.php"];
+        NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
+        NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
+        
 	// Do any additional setup after loading the view.
 }
 
