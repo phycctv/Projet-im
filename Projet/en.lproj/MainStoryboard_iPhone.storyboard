@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="czJ-2I-yUH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="czJ-2I-yUH">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
         <!--Vue Connexion-->
@@ -10,7 +10,7 @@
             <objects>
                 <viewController id="dtM-ZW-tIj" customClass="VueConnexion" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Szc-qK-d2u">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bienvenue sur journeyes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Tr-VF-DmO">
@@ -126,7 +126,7 @@
             <objects>
                 <viewController id="bDL-qa-w8B" customClass="ViewControllerInformations" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bFM-6J-3Wj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="HHC-Ay-UTV">
@@ -306,7 +306,7 @@
             <objects>
                 <viewController id="Lsz-T7-EN4" customClass="ViewControllerPhotoInscription" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LU1-U4-Q4Q">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Prise de la photo !!!!!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="30K-jv-M91">
@@ -381,7 +381,7 @@
             <objects>
                 <viewController title="Actualites" id="dqp-kA-TIe" customClass="ViewControllerActualites" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hgx-aQ-15m">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="N9U-zq-j3U">
@@ -403,7 +403,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Prendre une photo" width="308" id="xyr-Ut-0AM"/>
+                                    <barButtonItem title="Prendre une photo" width="202" id="xyr-Ut-0AM"/>
+                                    <barButtonItem title="Déconnexion" id="ivq-33-92M"/>
                                 </items>
                                 <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
@@ -471,7 +472,7 @@
             <objects>
                 <viewController title="Notifications" id="2" customClass="ViewControllerNotifications" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="uRO-CR-WuS">
@@ -506,7 +507,7 @@
             <objects>
                 <viewController title="Recherche" id="3" customClass="ViewControllerRecherche" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="17">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="n4C-XG-lML">
@@ -547,7 +548,7 @@
             <objects>
                 <viewController id="cyM-ec-TWD" customClass="ViewControllerInscription" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="voO-tF-p2r">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="fJJ-Dd-lt7">
@@ -690,7 +691,7 @@
             <objects>
                 <viewController title="Contacts" id="RxC-pz-0f9" customClass="ViewControllerContactsProfil" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vnT-Be-udZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="kW6-Zp-wmp">
@@ -739,7 +740,7 @@
             <objects>
                 <viewController title="Infos" id="Hf6-fh-5eU" customClass="ViewControllerInfosProfil" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="krD-SM-Zdr">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Tfm-Tq-EtP">
@@ -760,7 +761,7 @@
             <objects>
                 <viewController id="rLm-h8-eoC" customClass="ViewControllerAfficherProfil" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h0p-Bc-bzt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Tz8-Rr-Bhq">
@@ -805,7 +806,7 @@
             <objects>
                 <viewController title="Carte (timeline)" id="lbs-33-5GC" customClass="ViewControllerCarteProfil" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uec-99-4KR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="ztS-oR-bNL">
@@ -826,7 +827,7 @@
             <objects>
                 <viewController title="Photos" id="nsU-yT-zpT" customClass="ViewControllerPhotosProfil" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Klo-aN-vsl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="T0w-IM-2FZ">
@@ -995,4 +996,9 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="tAk-ts-Zsd"/>
+        <segue reference="F0z-Z9-ven"/>
+        <segue reference="zqw-BW-GGG"/>
+    </inferredMetricsTieBreakers>
 </document>
