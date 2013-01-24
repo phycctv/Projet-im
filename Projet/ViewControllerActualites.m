@@ -31,14 +31,42 @@
     // récuperer une chaine contenant 10 fois : un idphotoprofil, un lienphotoprofil, un nom profil, un prenom profil, un id photo, un lien photo, un nom photo, un commentaire (peut être vide), une date
     // convertir ça en tableau à deux dimension : [10][8] qui récupère une chaine utf8 et la convertir. La chaine est découpée selon un caractère précis. ça semble simple.
     // le mettre dans tableViewDataSource au final
+
     
+//    NSString *strURL = [NSString stringWithFormat:@"http://eyesnap.fr/project05/appli/getSession.php"];
+//    NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
+//    NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
+//    if ([strResult isEqualToString:@"0"]) {
+//        UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil
+//            message:NSLocalizedString("Vous avez été déconnecté.", @"")
+//            delegate:nil
+//            cancelButtonTitle:NSLocalizedString( @"OK", @"")
+//            otherButtonTitles:nil
+//            ];
+//        [view show];
+//        [view release];
+//        [self performSegueWithIdentifier:@"ohlala" sender:self];
+//        [sender resignFirstResponder];
+//    }
+//    else{
 //    NSString *strURL = [NSString stringWithFormat:@"http://eyesnap.fr/project05/appli/actualites.php?idcompte=%@",self.textEmail.text];
 //    NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
 //    NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
 //    if ([strResult isEqualToString:@""]) {
 //        tableViewDataSource = [[NSArray alloc] initWithObjects:@"Il n'y a pas d'actualités disponibles.", nil];
 //    }
-//
+//    else if ([strResult isEqualToString:@"0"]) {
+//        UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil
+//            message:NSLocalizedString("Vous avez été déconnecté.", @"")
+//            delegate:nil
+//            cancelButtonTitle:NSLocalizedString( @"OK", @"")
+//            otherButtonTitles:nil
+//            ];
+//        [view show];
+//        [view release];
+//        [self performSegueWithIdentifier:@"ohlala" sender:self];
+//        [sender resignFirstResponder];
+//    }
 //    else
 //    {
 //        NSArray *tableRecup;
@@ -49,7 +77,7 @@
 //        }
 //        tableViewDataSource = tableRecupInter;        
 //    }
-
+//    }
     
     tableViewDataSource = [[NSArray alloc] initWithObjects:@"Item 1", @"Item 2", @"Item 3", nil];
 }
