@@ -11,7 +11,12 @@
 @interface ViewControllerAfficherProfil : UIViewController
 
 
-@property (retain, nonatomic) IBOutlet UILabel *labelTest;
 @property (strong, nonatomic) id textAAfficher;
+@property (retain, nonatomic) IBOutlet UILabel *lab1;
+@property (retain, nonatomic) IBOutlet UILabel *lab2;
+@property (retain, nonatomic) IBOutlet UILabel *lab3;
+@property (retain, nonatomic) IBOutlet UILabel *lab4;
+@property (retain, nonatomic) IBOutlet UILabel *lab5;
+@property (retain, nonatomic) IBOutlet UILabel *lab6;
 
 @end

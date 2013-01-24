@@ -32,26 +32,41 @@
     // recupere une chaine qui contient fois x : un idProfil, un nom, prenom
     // convertir ça en tableau à deux dimension : [x][3] qui récupère une chaine et la convertir. La chaine est découpée selon un caractère précis. ça semble simple.
     
-    //    NSString *strURL = [NSString stringWithFormat:@"http://eyesnap.fr/project05/appli/getContacts.php?idCompte=%@",self.textEmail.text];
-    //    NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
-    //    NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
-    //    if ([strResult isEqualToString:@""]) {
-    //        tableViewDataSource = [[NSArray alloc] initWithObjects:@"Vous n'avez pas de contacts.", nil];
-    //    }
-    //
-    //    else
-    //    {
-    //        NSArray *tableRecup;
-    //        NSMutableArray *tableRecupInter;
-    //        tableRecup = [strResult componentsSeparatedByString:@"##"];
-    //        for (NSInteger i=0; i < [tableRecup count]; i++) {
-    //            [tableRecupInter addObject:[tableRecup[i] componentsSeparatedByString:@"::"]];
-    //        }
-    //        tableViewDataSource = tableRecupInter;
-    //    }
+        NSString *strURL = [NSString stringWithFormat:@"http://projects.eyesnap.fr/project05/appli/getContact.php"];
+        NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
+        NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
+        if ([strResult isEqualToString:@""]) {
+            tableViewDataSource = [[NSArray alloc] initWithObjects:@"Vous n'avez pas de contacts.", nil];
+        } else {
+            NSArray *tableAmis = [[NSArray alloc] initWithArray:[strResult componentsSeparatedByString:@"</br>"]];
+            
+            //[tableViewDataSource addObject:nil];
+            NSMutableArray * tableRecup = [[NSMutableArray alloc] initWithObjects: nil];
+            NSMutableArray * tableRecup2 = [[NSMutableArray alloc] initWithObjects: nil];
+            for(NSString *line in tableAmis){
+                if ([line length]>2) {
+                    NSArray *tableNom = [[NSArray alloc] initWithArray:[line componentsSeparatedByString:@"::"] ];
+                    line = [[tableNom objectAtIndex:1 ] stringByAppendingFormat:@" "];
+                    line = [line stringByAppendingFormat:[tableNom objectAtIndex:2 ]];
+                    [tableRecup addObject:line];
+                    [tableRecup2 addObject:[tableNom objectAtIndex:0]];
+                }
+            }
+            tableViewDataSource = [[NSArray alloc] initWithArray:tableRecup];
+            tableId = [[NSArray alloc] initWithArray:tableRecup2];
+  /*          NSArray *tableRecup;
+            NSMutableArray *tableRecupInter;
+            tableRecup = [strResult componentsSeparatedByString:@"##"];
+            for (NSInteger i=0; i < [tableRecup count]; i++) {
+                [tableRecupInter addObject:[tableRecup objectsAtIndexes:i componentsSeparatedByString:@"::"]];
+           }
+            tableViewDataSource = tableRecupInter;*/
+            //tableViewDataSource = [[NSArray alloc] initWithObjects:@"Item 1", @"Item 2", @"Item 3", nil];
+        }
+    //NSArray *array = [strResult componentsSeparatedByString:@"</br>"];
     
     
-    tableViewDataSource = [[NSArray alloc] initWithObjects:@"Item 1", @"Item 2", @"Item 3", nil];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -105,7 +120,7 @@
     {
         NSInteger selectedIndex = [[self->tableViewContacts indexPathForSelectedRow] row];
         ViewControllerAfficherProfil *vcap = [segue destinationViewController];
-        vcap.textAAfficher = [NSString stringWithFormat:@"%@", [tableViewDataSource objectAtIndex:selectedIndex]];
+        vcap.textAAfficher = [NSString stringWithFormat:@"%@", [tableId objectAtIndex:selectedIndex]];
     }
 
 }

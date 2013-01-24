@@ -12,6 +12,7 @@
 {
     IBOutlet UITableView *tableViewContacts;
     NSArray *tableViewDataSource;
+    NSArray *tableId;
 }
 
 @end
