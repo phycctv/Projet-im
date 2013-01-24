@@ -29,8 +29,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    // recupere une chaine qui contient fois x : un idProfil, un nom profil
-    // convertir ça en tableau à deux dimension : [x][2] qui récupère une chaine et la convertir. La chaine est découpée selon un caractère précis. ça semble simple.
+    // recupere une chaine qui contient fois x : un idProfil, un nom, prenom
+    // convertir ça en tableau à deux dimension : [x][3] qui récupère une chaine et la convertir. La chaine est découpée selon un caractère précis. ça semble simple.
     
     //    NSString *strURL = [NSString stringWithFormat:@"http://eyesnap.fr/project05/appli/getContacts.php?idCompte=%@",self.textEmail.text];
     //    NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
