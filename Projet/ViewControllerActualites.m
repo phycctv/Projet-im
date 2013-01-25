@@ -33,7 +33,7 @@
     // le mettre dans tableViewDataSource au final
 
     
-    NSString *strURLCompte = [NSString stringWithFormat:@"http://eyesnap.fr/project05/appli/getSession.php"];
+    NSString *strURLCompte = [NSString stringWithFormat:@"http://projects.eyesnap.fr/project05/appli/getSession.php"];
     NSData *dataURLCompte = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURLCompte]];
     NSString *idCompte = [[[NSString alloc] initWithData:dataURLCompte encoding:NSUTF8StringEncoding]autorelease];
     if ([idCompte isEqualToString:@"0"]) {
@@ -42,11 +42,11 @@
         [self.navigationController pushViewController:nextViewController animated:YES];
     }
     else{
-        NSString *strURL = [NSString stringWithFormat:@"http://eyesnap.fr/project05/appli/actualites.php"];
+        NSString *strURL = [NSString stringWithFormat:@"http://projects.eyesnap.fr/project05/appli/actualites.php"];
         NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
         NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
         if ([strResult isEqualToString:@""]) {
-            tableViewDataSource = [[NSArray alloc] initWithObjects:@"Il n'y a pas d'actualités disponibles."   , nil];
+            tableViewDataSource = [[NSArray alloc] initWithObjects:@"Il n'y a pas d'actualités disponibles.", nil];
         }
         else if ([strResult isEqualToString:@"0"]) {
             UIStoryboard *board=[UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
@@ -55,17 +55,19 @@
         }
         else
         {
-            NSArray *tableRecup;
-            NSMutableArray *tableRecupInter;
-            tableRecup = [strResult componentsSeparatedByString:@"##"];
-            for (NSInteger i=0; i < [tableRecup count]; i++) {
-                [tableRecupInter addObject:[tableRecup[i] componentsSeparatedByString:@"::"]];
+            NSArray *tableActus = [[NSArray alloc] initWithArray:[strResult componentsSeparatedByString:@"##"]];
+            
+            //[tableViewDataSource addObject:nil];
+            NSMutableArray * tableRecup = [[NSMutableArray alloc] initWithObjects: nil];
+            for(NSString *line in tableActus){
+                if ([line length]>2) {
+                    NSArray *tableRecup2 = [[NSArray alloc] initWithArray:[line componentsSeparatedByString:@"::"]];
+                    [tableRecup addObject:tableRecup2];
+                }
             }
-            tableViewDataSource = tableRecupInter;
+            tableViewDataSource = [[NSArray alloc] initWithArray:tableRecup];
         }
     }
-    
-    tableViewDataSource = [[NSArray alloc] initWithObjects:@"Item 1", @"Item 2", @"Item 3", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -81,7 +83,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 100;
+    return 80;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -95,9 +97,21 @@
     }
     
     NSArray *tableTemp = [tableViewDataSource objectAtIndex:[indexPath row]];
-    NSString *stringTemp = tableTemp[0];
-    NSString *stringTemp2 = tableTemp[1];
-    NSString *titleText = [stringTemp stringByAppendingString:stringTemp2];
+    
+    NSString *nomImage = [tableTemp objectAtIndex:3];
+    NSString *titleText = [nomImage stringByAppendingString:@" par "];
+    
+    NSString *stringTemp = [tableTemp objectAtIndex:0];
+    titleText = [titleText stringByAppendingString:stringTemp];
+    titleText = [titleText stringByAppendingString:@" "];
+    
+    NSString *stringTemp2 = [tableTemp objectAtIndex:1];
+    titleText = [titleText stringByAppendingString:stringTemp2];
+    titleText = [titleText stringByAppendingString:@" le "];
+    
+    NSString *dateImage = [tableTemp objectAtIndex:4];
+    titleText = [titleText stringByAppendingString:dateImage];
+    
     
     cell.textLabel.text = titleText;
     
