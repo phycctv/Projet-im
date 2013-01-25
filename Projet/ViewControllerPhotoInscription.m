@@ -110,7 +110,7 @@ UIImage *image;
 
 		UIImage *originalImage;
 
-			originalImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+			originalImage = [info objectForKey: UIImagePickerControllerEditedImage];
 			//imgView = [[UIImageView alloc] initWithImage:originalImage];
     [imgView setImage:originalImage];
     [self dismissModalViewControllerAnimated:YES];
