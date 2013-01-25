@@ -15,6 +15,7 @@
 @implementation ViewControllerPhotoInscription
 @synthesize choisir;
 @synthesize butPrendrePhoto;
+@synthesize imgView;
 bool hasCamera;
 UIImage *image;
 
@@ -101,35 +102,24 @@ UIImage *image;
 }
 - (void)dealloc {
     [choisir release];
-    [_imgView release];
+    [imgView release];
     [super dealloc];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
-	NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
-	if ([mediaType isEqualToString:@"public.image"]){
+
 		UIImage *originalImage;
-		if ([[picker title] isEqualToString:@"Photo Albums"]) {
+
 			originalImage = [info objectForKey:UIImagePickerControllerOriginalImage];
-			_imgView = [[UIImageView alloc] initWithImage:originalImage];
-			UIScrollView *scrollView = [[UIScrollView alloc] init];
-			[scrollView setScrollEnabled:YES];
-			[scrollView setClipsToBounds:YES];
-			[scrollView setBackgroundColor:[UIColor blackColor]];
-			[scrollView setCanCancelContentTouches:NO];
-			[scrollView setContentSize:CGSizeMake(_imgView.frame.size.width, _imgView.frame.size.height)];
-			[scrollView addSubview:_imgView];
-			[_imgView release];
-			UIViewController *showImageController = [[UIViewController alloc] init];
-			[showImageController setView:scrollView];
-			[scrollView release];
-			[picker pushViewController:showImageController animated:YES];
-			[showImageController release];
-		}
+			//imgView = [[UIImageView alloc] initWithImage:originalImage];
+    [imgView setImage:originalImage];
+    [self dismissModalViewControllerAnimated:YES];
+			//[imgView  ];
+		
             
-	}
+	
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
-	[picker dismissModalViewControllerAnimated:YES];
+	[pick2 dismissModalViewControllerAnimated:YES];
 }@end
