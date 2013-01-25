@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewControllerPhotoInscription : UIViewController
+@interface ViewControllerPhotoInscription : UIViewController<UIImagePickerControllerDelegate>{
+    UIImagePickerController *pick2;
+}
 @property (unsafe_unretained, nonatomic) IBOutlet UIButton *butPrendrePhoto;
+@property (retain, nonatomic) IBOutlet UIImageView *imgView;
 - (IBAction)down:(id)sender;
 - (IBAction)cancel:(id)sender;
 - (IBAction)end:(id)sender;

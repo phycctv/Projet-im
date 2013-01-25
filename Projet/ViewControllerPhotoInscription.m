@@ -47,6 +47,7 @@ UIImage *image;
 - (void)viewDidUnload {
     [self setButPrendrePhoto:nil];
     [self setChoisir:nil];
+    [self setImgView:nil];
     [super viewDidUnload];
 }
 - (IBAction)down:(id)sender {
@@ -62,12 +63,12 @@ UIImage *image;
 }
 -(void)getMediaFromSource:(UIImagePickerControllerSourceType)sourceType{
     NSArray *mediaTypes=[UIImagePickerController availableMediaTypesForSourceType:sourceType];
-    UIImagePickerController *picker=[[UIImagePickerController alloc]init];
-    picker.mediaTypes=mediaTypes;
-    //picker.delegate=self;
-    picker.allowsEditing=YES;
-    picker.sourceType=sourceType;
-    [self presentModalViewController:picker animated:YES];
+    pick2=[[UIImagePickerController alloc]init];
+    pick2.mediaTypes=mediaTypes;
+    pick2.delegate=self;
+    pick2.allowsEditing=YES;
+    pick2.sourceType=sourceType;
+    [self presentModalViewController:pick2 animated:YES];
 }
 
 
@@ -100,6 +101,7 @@ UIImage *image;
 }
 - (void)dealloc {
     [choisir release];
+    [_imgView release];
     [super dealloc];
 }
 
@@ -109,15 +111,15 @@ UIImage *image;
 		UIImage *originalImage;
 		if ([[picker title] isEqualToString:@"Photo Albums"]) {
 			originalImage = [info objectForKey:UIImagePickerControllerOriginalImage];
-			UIImageView *imageView = [[UIImageView alloc] initWithImage:originalImage];
+			_imgView = [[UIImageView alloc] initWithImage:originalImage];
 			UIScrollView *scrollView = [[UIScrollView alloc] init];
 			[scrollView setScrollEnabled:YES];
 			[scrollView setClipsToBounds:YES];
 			[scrollView setBackgroundColor:[UIColor blackColor]];
 			[scrollView setCanCancelContentTouches:NO];
-			[scrollView setContentSize:CGSizeMake(imageView.frame.size.width, imageView.frame.size.height)];
-			[scrollView addSubview:imageView];
-			[imageView release];
+			[scrollView setContentSize:CGSizeMake(_imgView.frame.size.width, _imgView.frame.size.height)];
+			[scrollView addSubview:_imgView];
+			[_imgView release];
 			UIViewController *showImageController = [[UIViewController alloc] init];
 			[showImageController setView:scrollView];
 			[scrollView release];
