@@ -33,51 +33,37 @@
     // le mettre dans tableViewDataSource au final
 
     
-//    NSString *strURL = [NSString stringWithFormat:@"http://eyesnap.fr/project05/appli/getSession.php"];
-//    NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
-//    NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
-//    if ([strResult isEqualToString:@"0"]) {
-//        UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil
-//            message:NSLocalizedString("Vous avez été déconnecté.", @"")
-//            delegate:nil
-//            cancelButtonTitle:NSLocalizedString( @"OK", @"")
-//            otherButtonTitles:nil
-//            ];
-//        [view show];
-//        [view release];
-//        [self performSegueWithIdentifier:@"ohlala" sender:self];
-//        [sender resignFirstResponder];
-//    }
-//    else{
-//    NSString *strURL = [NSString stringWithFormat:@"http://eyesnap.fr/project05/appli/actualites.php?idcompte=%@",self.textEmail.text];
-//    NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
-//    NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
-//    if ([strResult isEqualToString:@""]) {
-//        tableViewDataSource = [[NSArray alloc] initWithObjects:@"Il n'y a pas d'actualités disponibles.", nil];
-//    }
-//    else if ([strResult isEqualToString:@"0"]) {
-//        UIAlertView * view= [[UIAlertView alloc] initWithTitle:nil
-//            message:NSLocalizedString("Vous avez été déconnecté.", @"")
-//            delegate:nil
-//            cancelButtonTitle:NSLocalizedString( @"OK", @"")
-//            otherButtonTitles:nil
-//            ];
-//        [view show];
-//        [view release];
-//        [self performSegueWithIdentifier:@"ohlala" sender:self];
-//        [sender resignFirstResponder];
-//    }
-//    else
-//    {
-//        NSArray *tableRecup;
-//        NSMutableArray *tableRecupInter;
-//        tableRecup = [strResult componentsSeparatedByString:@"##"];
-//        for (NSInteger i=0; i < [tableRecup count]; i++) {
-//            [tableRecupInter addObject:[tableRecup[i] componentsSeparatedByString:@"::"]];
-//        }
-//        tableViewDataSource = tableRecupInter;        
-//    }
-//    }
+    NSString *strURLCompte = [NSString stringWithFormat:@"http://eyesnap.fr/project05/appli/getSession.php"];
+    NSData *dataURLCompte = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURLCompte]];
+    NSString *idCompte = [[[NSString alloc] initWithData:dataURLCompte encoding:NSUTF8StringEncoding]autorelease];
+    if ([idCompte isEqualToString:@"0"]) {
+        UIStoryboard *board=[UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+        UITabBarController *nextViewController =[board instantiateViewControllerWithIdentifier:@"Connexion"];
+        [self.navigationController pushViewController:nextViewController animated:YES];
+    }
+    else{
+        NSString *strURL = [NSString stringWithFormat:@"http://eyesnap.fr/project05/appli/actualites.php"];
+        NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];
+        NSString *strResult = [[[NSString alloc] initWithData:dataURL encoding:NSUTF8StringEncoding]autorelease];
+        if ([strResult isEqualToString:@""]) {
+            tableViewDataSource = [[NSArray alloc] initWithObjects:@"Il n'y a pas d'actualités disponibles."   , nil];
+        }
+        else if ([strResult isEqualToString:@"0"]) {
+            UIStoryboard *board=[UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+            UITabBarController *nextViewController =[board instantiateViewControllerWithIdentifier:@"Connexion"];
+            [self.navigationController pushViewController:nextViewController animated:YES];
+        }
+        else
+        {
+            NSArray *tableRecup;
+            NSMutableArray *tableRecupInter;
+            tableRecup = [strResult componentsSeparatedByString:@"##"];
+            for (NSInteger i=0; i < [tableRecup count]; i++) {
+                [tableRecupInter addObject:[tableRecup[i] componentsSeparatedByString:@"::"]];
+            }
+            tableViewDataSource = tableRecupInter;
+        }
+    }
     
     tableViewDataSource = [[NSArray alloc] initWithObjects:@"Item 1", @"Item 2", @"Item 3", nil];
 }
@@ -95,7 +81,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 50;
+    return 100;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -108,11 +94,10 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-//    NSArray *tableTemp = [tableViewDataSource objectAtIndex:[indexPath row]];
-//    NSString *stringTemp = tableTemp[2];
-//    NSString *titleText = [stringTemp stringByAppendingString:[tableTemp[3]]];
-    
-    NSString *titleText = [tableViewDataSource objectAtIndex:[indexPath row]];
+    NSArray *tableTemp = [tableViewDataSource objectAtIndex:[indexPath row]];
+    NSString *stringTemp = tableTemp[0];
+    NSString *stringTemp2 = tableTemp[1];
+    NSString *titleText = [stringTemp stringByAppendingString:stringTemp2];
     
     cell.textLabel.text = titleText;
     
