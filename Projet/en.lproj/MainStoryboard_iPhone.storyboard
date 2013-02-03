@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="czJ-2I-yUH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="czJ-2I-yUH">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
         <!--Vue Connexion - Connexion-->
         <scene sceneID="b7t-g0-T3r">
             <objects>
-                <viewController title="Connexion" id="dtM-ZW-tIj" customClass="VueConnexion" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Connexion" title="Connexion" id="dtM-ZW-tIj" customClass="VueConnexion" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Szc-qK-d2u">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bienvenue sur journeyes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Tr-VF-DmO">
@@ -126,7 +126,7 @@
             <objects>
                 <viewController id="bDL-qa-w8B" customClass="ViewControllerInformations" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bFM-6J-3Wj">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="HHC-Ay-UTV">
@@ -306,7 +306,7 @@
             <objects>
                 <viewController id="Lsz-T7-EN4" customClass="ViewControllerPhotoInscription" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LU1-U4-Q4Q">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Prise de la photo !!!!!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="30K-jv-M91">
@@ -332,7 +332,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eCa-Si-KxF">
-                                <rect key="frame" x="187" y="360" width="80" height="31"/>
+                                <rect key="frame" x="59" y="358" width="80" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Prendre">
@@ -368,6 +368,21 @@
                                 <rect key="frame" x="40" y="120" width="240" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LQt-fE-3xV">
+                                <rect key="frame" x="201" y="358" width="72" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" red="1" green="0.4899342142" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="upload:" destination="Lsz-T7-EN4" eventType="touchUpInside" id="biE-jI-CYM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -375,6 +390,7 @@
                     <connections>
                         <outlet property="butPrendrePhoto" destination="eCa-Si-KxF" id="bdx-Vv-r3U"/>
                         <outlet property="imgView" destination="ia7-EI-cuj" id="Hob-K4-ZQH"/>
+                        <outlet property="upload" destination="LQt-fE-3xV" id="sYH-Eg-0Tu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fng-Ky-0WN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -386,7 +402,7 @@
             <objects>
                 <viewController title="Actualites" id="dqp-kA-TIe" customClass="ViewControllerActualites" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hgx-aQ-15m">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="N9U-zq-j3U">
@@ -485,7 +501,7 @@
             <objects>
                 <viewController title="Notifications" id="2" customClass="ViewControllerNotifications" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="uRO-CR-WuS">
@@ -520,7 +536,7 @@
             <objects>
                 <viewController title="Recherche" id="3" customClass="ViewControllerRecherche" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="17">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="n4C-XG-lML">
@@ -561,7 +577,7 @@
             <objects>
                 <viewController id="cyM-ec-TWD" customClass="ViewControllerInscription" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="voO-tF-p2r">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="fJJ-Dd-lt7">
@@ -705,7 +721,7 @@
             <objects>
                 <viewController title="Contacts" id="RxC-pz-0f9" customClass="ViewControllerContactsProfil" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vnT-Be-udZ">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="kW6-Zp-wmp">
@@ -754,7 +770,7 @@
             <objects>
                 <viewController title="Infos" id="Hf6-fh-5eU" customClass="ViewControllerInfosProfil" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="krD-SM-Zdr">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Tfm-Tq-EtP">
@@ -827,7 +843,7 @@
             <objects>
                 <viewController id="rLm-h8-eoC" customClass="ViewControllerAfficherProfil" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h0p-Bc-bzt">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Tz8-Rr-Bhq">
@@ -912,7 +928,7 @@
             <objects>
                 <viewController title="Carte (timeline)" id="lbs-33-5GC" customClass="ViewControllerCarteProfil" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uec-99-4KR">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="ztS-oR-bNL">
@@ -933,7 +949,7 @@
             <objects>
                 <viewController title="Photos" id="nsU-yT-zpT" customClass="ViewControllerPhotosProfil" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Klo-aN-vsl">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="T0w-IM-2FZ">
@@ -998,7 +1014,7 @@
             <objects>
                 <viewController id="BMT-8y-5R9" customClass="ViewControllerPhotoInscription" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Okm-CX-sQz">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Prise de la photo !!!!!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QhG-6V-vyt">
@@ -1016,7 +1032,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ktp-v7-mIR">
-                                <rect key="frame" x="187" y="360" width="80" height="31"/>
+                                <rect key="frame" x="59" y="364" width="80" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Prendre">
@@ -1052,6 +1068,21 @@
                                 <rect key="frame" x="40" y="78" width="240" height="262"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HLc-Ie-Z4i">
+                                <rect key="frame" x="195" y="364" width="72" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" red="1" green="0.4899342142" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="upload:" destination="BMT-8y-5R9" eventType="touchUpInside" id="RDk-yW-BkM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1071,129 +1102,9 @@
         <image name="first" width="16" height="16"/>
         <image name="second" width="16" height="16"/>
     </resources>
-    <classes>
-        <class className="ViewControllerActualites" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerActualites.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableViewActu" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="ViewControllerAfficherProfil" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerAfficherProfil.h"/>
-            <relationships>
-                <relationship kind="outlet" name="lab1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lab2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lab3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lab4" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lab5" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lab6" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ViewControllerApresPhoto" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerApresPhoto.h"/>
-        </class>
-        <class className="ViewControllerCarteProfil" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerCarteProfil.h"/>
-        </class>
-        <class className="ViewControllerContactsProfil" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerContactsProfil.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableViewContacts" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="ViewControllerInformations" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerInformations.h"/>
-            <relationships>
-                <relationship kind="action" name="begin:"/>
-                <relationship kind="action" name="changed:"/>
-                <relationship kind="action" name="confirm:"/>
-                <relationship kind="action" name="confirmation:"/>
-                <relationship kind="action" name="end:"/>
-                <relationship kind="action" name="next:"/>
-                <relationship kind="outlet" name="textAnnee" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textJour" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textMois" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textNom" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textPrenom" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textTel" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="ViewControllerInfosProfil" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerInfosProfil.h"/>
-            <relationships>
-                <relationship kind="outlet" name="lab1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lab2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lab3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lab4" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lab5" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lab6" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ViewControllerInscription" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerInscription.h"/>
-            <relationships>
-                <relationship kind="action" name="begin:"/>
-                <relationship kind="action" name="confirm:"/>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="action" name="end:"/>
-                <relationship kind="action" name="next:"/>
-                <relationship kind="outlet" name="textConfirmation" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textEmail" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textMdp" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="ViewControllerNotifications" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerNotifications.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableViewNotif" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="ViewControllerPhotoInscription" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerPhotoInscription.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="down:"/>
-                <relationship kind="action" name="end:"/>
-                <relationship kind="action" name="up:"/>
-                <relationship kind="outlet" name="butPrendrePhoto" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="choisir" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="imgView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="ViewControllerPhotosProfil" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerPhotosProfil.h"/>
-        </class>
-        <class className="ViewControllerRecherche" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerRecherche.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableViewRecherche" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="VueConnexion" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/VueConnexion.h"/>
-            <relationships>
-                <relationship kind="action" name="begin:"/>
-                <relationship kind="action" name="confirm:"/>
-                <relationship kind="action" name="end:"/>
-                <relationship kind="action" name="mdpOublie:"/>
-                <relationship kind="action" name="next:"/>
-                <relationship kind="outlet" name="inscription" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="mdpOublie" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="textEmail" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textMdp" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="d73-DT-pei"/>
-        <segue reference="ITQ-sG-xhe"/>
-        <segue reference="oRz-JX-wwA"/>
-        <segue reference="SZJ-pN-ntH"/>
-        <segue reference="tAk-ts-Zsd"/>
-    </inferredMetricsTieBreakers>
 </document>
